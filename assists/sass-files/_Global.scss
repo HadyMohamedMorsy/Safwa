@@ -1,0 +1,83 @@
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+
+    // Output standard non-prefixed declaration
+    #{$property}: $value;
+}
+
+
+
+:root {
+    --primary-color : #fff;
+    --primary-color-span : #041C32;
+    --primary-color-navbar : #f0f8ff;
+    --primary-color-links-hover : #F16525;
+    --primary-color-links : #0080ff;
+    --primary-color-Header : #F16525;
+    --primary-color-text : #7e8895;
+    --primary-color-box : #d2deec;
+}
+
+.dark-mode {
+    --primary-color : #041C32;
+    --primary-color-navbar : #041C32;
+    --primary-color-span : #fff;
+    --primary-color-links-hover : #F16525;
+    --primary-color-links : #0080ff;
+    --primary-color-Header : #F16525;
+    --primary-color-text : #fff;
+    --primary-color-box : #d2deec;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    @include prefix(box-sizing, border-box, webkit ms o);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+li{
+    padding: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,130 @@
+nav {
+	background-color: var(--primary-color-navbar);
+	padding: 20px 15px;
+	color: var(--primary-color-links);
+	position: relative;
+	header {
+		.counter-linke {
+			.nav-links {
+				display: flex;
+				flex-direction: row;
+				padding: 0px;
+				list-style: none;
+			}
+		}
+	}
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.nav-links {
+	li {
+		padding: 0px 20px;
+		cursor: pointer;
+		a {
+			color: var(--primary-color-links);
+			transition: color 0.5s;
+			font-size: 18px;
+			font-weight: bold;
+			&:hover {
+				color: var(--primary-color-links-hover);
+				text-decoration: none; 
+			}
+		}
+	}
+}
+.dropdown {
+	position: relative;
+	.icon-chevron-thin-down{
+		position: absolute;
+		top: 50%;
+		right: -2%;
+		transform: translateY(-50%);
+		font-size: 18px;
+		@media (max-width : 767px) {
+			right: 0%;
+			top: 10px;
+		}
+	}
+	.conter-linke-dropdown {
+		position: absolute;
+		width: 200px;
+		background-color: var(--primary-color-navbar);
+		height: 0px;
+		transition: height 0.5s;
+		ul {
+			width: 100%;
+			list-style: none;
+			padding: 20px;
+			display: none;
+			li {
+				width: 100%;
+				padding: 15px 0px;
+			}
+		}
+	}
+}
+.burger {
+	cursor: pointer;
+	span {
+		width: 35px;
+		height: 3px;
+		background-color: var(--primary-color-span );
+		display: block;
+		margin: 10px;
+	}
+}
+@media (max-width: 767px) {
+	nav {
+		header {
+			.counter-linke {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				order: 3;
+				transition: height 0.5s;
+				overflow: hidden;
+				height: 0px;
+				.nav-links {
+					display: flex;
+					align-items: flex-start;
+					flex-direction: column;
+					width: 100%;
+					transition: height 0.5s;
+				}
+			}
+			.nav-links {
+				li {
+					display: block;
+					padding: 20px 0px;
+					width: 100%;
+					a {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	.dropdown {
+		.conter-linke-dropdown {
+			position: static;
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+}
+@media (min-width: 768px) {
+	nav {
+		header {
+			.counter-linke {
+				height: auto !important;
+			}
+		}
+	}
+	.burger {
+		display: none;
+	}
+}
