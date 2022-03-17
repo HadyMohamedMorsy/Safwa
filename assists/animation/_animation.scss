@@ -55,3 +55,13 @@
     .active {
         display: block !important;
     }
+
+    .animation-scroll{
+        opacity: 0;
+        transform: scale(0.7);
+        transition: all 1s ease-in-out;
+        &.active{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }

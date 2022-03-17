@@ -46,3 +46,21 @@
 .icon-circle-left:before {
   content: "\ea44";
 }
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-key:before {
+  content: "\e98d";
+}

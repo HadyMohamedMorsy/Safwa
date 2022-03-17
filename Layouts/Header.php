@@ -1,3 +1,26 @@
+<div class="First-Nav">
+    <div class="contact-call container">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="Phone"><a href="tel:+20 1001910493"> <span class="icon-phone"></span>  +20 1001910493 </a></div>
+                    <div class="working">  Working Hours: Sat - Wed: 08.00am - 05.30pm </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="follow">
+                    <div>
+                        <span> Follow : </span>
+                    </div>
+                    <a href=""> <span class="icon-facebook"></span> </a>
+                    <a href=""> <span class="icon-linkedin2"></span></a>
+                    <a href=""> <span class="icon-youtube"></span></a>
+                    <a href=""><span class="icon-instagram"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <nav>
     <header class="container">
         <div class="logo"> 

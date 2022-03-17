@@ -14,7 +14,8 @@ $grid__cols: 12;
     padding-left: $paddingLeftRowContainer;
     padding-right: $paddingRightRowContainer;
     @media (max-width : 767px) {
-        flex-basis: 100%;
+        @include prefix(flex-basis, 100%, webkit ms o);
+
     }
   }
 }
@@ -24,20 +25,22 @@ $grid__cols: 12;
     --primary-color : #fff;
     --primary-color-span : #041C32;
     --primary-color-navbar : #f0f8ff;
-    --primary-color-links-hover : #F16525;
+    --primary-color-links-hover : #f2601b;
     --primary-color-links : #27357f;
-    --primary-color-Header : #F16525;
+    --primary-color-Header : #f2601b;
+    --primary-color-Header-section : #27357f;
     --primary-color-text : #7e8895;
     --primary-color-box : #d2deec;
+    --primary-black: #000;
 }
 
 .dark-mode {
     --primary-color : #041C32;
     --primary-color-navbar : #041C32;
     --primary-color-span : #fff;
-    --primary-color-links-hover : #F16525;
+    --primary-color-links-hover : #f2601b;
     --primary-color-links : #27357f;
-    --primary-color-Header : #F16525;
+    --primary-color-Header : #f2601b;
     --primary-color-text : #fff;
     --primary-color-box : #d2deec;
 }
@@ -52,7 +55,16 @@ $grid__cols: 12;
 }
 body{
     overflow-x: hidden;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
+// links 
+
+a {
+    text-decoration: none;
+  }
+
 
 .container {
 	width: 100%;
@@ -103,11 +115,20 @@ li{
     @include prefix(display,grid, webkit ms o);
     @include prefix(grid-template-columns, repeat(auto-fill, minmax(350px, 1fr)), webkit ms o);
     @include prefix(grid-gap,20px, webkit ms o);
+    .row-section-grid{
+        padding-left: $paddingLeftRowContainer;
+        padding-right: $paddingRightRowContainer;
+    }
 }
 .grid-layout-2{
     @include prefix(display,grid, webkit ms o);
     @include prefix(grid-template-columns, repeat(auto-fill, minmax(400px, 1fr)), webkit ms o);
     @include prefix(grid-gap,20px, webkit ms o);
+
+    .row-section-grid{
+        padding-left: $paddingLeftRowContainer;
+        padding-right: $paddingRightRowContainer;
+    }
 }
 .display-grid{
     @include prefix(display,flex, webkit ms o);
@@ -116,5 +137,5 @@ li{
 .logo{
     width: 175px;
     height: 100px;
-    object-fit: cover;
+    @include prefix(object-fit,cover, webkit ms o);
 }
