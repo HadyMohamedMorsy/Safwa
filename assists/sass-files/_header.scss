@@ -28,7 +28,7 @@ header {
 		a {
 			color: var(--primary-color-links);
 			transition: color 0.5s;
-			font-size: 18px;
+			font-size: $fontlinks;
 			font-weight: bold;
 			&:hover {
 				color: var(--primary-color-links-hover);
@@ -103,7 +103,7 @@ header {
 					padding: 20px 0px;
 					width: 100%;
 					a {
-						font-size: 22px;
+						font-size: $fontlinkssmall;
 					}
 				}
 			}
@@ -135,22 +135,49 @@ header {
 // header image
 .header-cover{
 	.image{
-		position: relative;
-		height: 100%;
-		width: 100%;
-		background-image: url('../images/pexels-christina-morillo-1181243.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-		height: 100vh;
-		overflow: hidden;
-		.content-image{
-			position: absolute;
-			z-index: 1;
-			top: 50%;
-			transform: translateY(-50%);
+		color: #fff;
+		.image-content{
 			width: 100%;
+			overflow: hidden;
+			position: relative;
+			img{
+				width: 100%;
+				object-fit: cover;
+				opacity: .7;
+				position: relative;
+				display: block;
+				filter: grayscale(70%);
+			}
+			.content-image{
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 1;
+				.content-image-content{
+					h3{
+						font-size: $headerSection;
+						@media (max-width : 991px) {
+							font-size: $headersmall;
+						}
+						max-width: 200px;
+						font-weight: bold;
+					}
+
+					p{
+						font-size: $fonttext;
+						@media (max-width : 767px) {
+							font-size: $fontsmall;
+						}
+						letter-spacing: 1px;
+						line-height: 30px;
+						font-weight: bold;
+					}
+				}
+
+			}
 		}
+
 	}
 }
 

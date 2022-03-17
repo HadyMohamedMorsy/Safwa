@@ -9,7 +9,7 @@
     include IncludeFileByLanguage('index',$_SESSION['Language']);
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo strtolower($_SESSION['Language']); ?>" dir="<?php echo $Navbar?>">
+<html lang="<?php echo strtolower($_SESSION['Language']); ?>" dir="<?php echo $Direction; ?>">
 
 <head>
     
@@ -40,6 +40,7 @@
     <!-- Start The Links Files -->
     <script src="Javascript-Files/demo.js"></script>
     <script src="Javascript-Files/menu.js"></script>
+    <script src="Javascript-Files/Slider.js"></script>
     <!-- End The Links Files -->
 </body>
 

@@ -1,0 +1,57 @@
+@-webkit-keyframes mymove {
+    from {
+        transform: translateX(-1000px)
+    }
+    to {
+        transform: translateX(0px)
+    }
+    }
+
+    @keyframes mymove {
+    from {
+        transform: translateX(-1000px)
+    }
+    to {
+        transform: translateX(0px)
+    }
+    }
+
+    @-webkit-keyframes ImageSlider {
+        from {
+			opacity: .7;
+            transform: scale(1);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1.2)
+        }
+        }
+    
+        @keyframes ImageSlider {
+            from {
+    		    opacity: .7;
+                transform: scale(1);
+                display: block;
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.3);
+
+            }
+        }
+        
+
+
+    .mangetranslate{
+
+        animation: mymove 2s;
+    
+    }
+    .Slider-image{
+        animation: ImageSlider 8s;
+        
+    
+    }
+    .active {
+        display: block !important;
+    }

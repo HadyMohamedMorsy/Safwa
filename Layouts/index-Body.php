@@ -2,11 +2,13 @@
 <div class="about-safwa">
     <div class="container">
         <div class="row">
-            <div class="display-grid">
+            <div class="col-2">
                 <div class="header-text">
                     <h2> AL-SAFWA </h2>
                     <span>Engineering Industry</span>
                 </div>
+            </div>
+            <div class="col-10">
                 <div class="text-content">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos hic at dolorem, 
                     nobis quod dolorum molestias fuga tempora fugit natus possimus animi neque voluptas 
@@ -124,3 +126,7 @@
 </div>
 
 <!-- Gallary -->
+
+<?php 
+    echo $_SESSION['Language'];
+?>

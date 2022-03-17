@@ -1,23 +1,19 @@
 <?php
 
-    // $LANGUAGE_SYSTEM = 'EN';
-    if (!isset($_SESSION['Language']) or empty($_SESSION)) {
-        $_SESSION['Language'] = 'EN';
-    }
-    if (isset($_POST['English'])) {
-        $_SESSION['Language'] = 'EN';
-        header("Refresh:0");
-    }
-    if (isset($_POST['Arabic'])) {
-        $_SESSION['Language'] = 'AR';
-        header("Refresh:0");
-    }
-    if (isset($_POST['French'])) {
-        $_SESSION['Language'] = 'FR';
-        header("Refresh:0");
+    // // $LANGUAGE_SYSTEM = 'EN';
+    // if (!isset($_SESSION['Language']) or empty($_SESSION)) {
+
+    //     $_SESSION['Language'] = 'EN';
+    // }
+
+    if(!isset($_GET['Lang'])){
+
+        $_SESSION['Language'] =  'EN';
+
+    }else{
+        $_SESSION['Language'] = $_GET['Lang'];
     }
 
-    
     function IncludeFileByLanguage($PAGE_NAME,$LANGUAGE){
         return $LANGUAGE . '/' . $LANGUAGE . '-' . $PAGE_NAME . '.php';
     }

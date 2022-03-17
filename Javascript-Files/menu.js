@@ -77,3 +77,5 @@ dropdownclick.forEach(item=>{
     
 
 })
+
+let valuelanguage = document.getElementById('language');
