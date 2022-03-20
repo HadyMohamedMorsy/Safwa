@@ -92,6 +92,7 @@ header {
 		background-color: var(--primary-color-navbar);
 		height: 0px;
 		@include prefix(transition, height 0.5s, webkit ms o);
+		z-index: 1000;
 		ul {
 			width: 100%;
 			list-style: none;

@@ -4,7 +4,7 @@
             <div class="col-6">
                 <div class="row">
                     <div class="Phone"><a href="tel:+20 1001910493"> <span class="icon-phone"></span>  +20 1001910493 </a></div>
-                    <div class="working">  Working Hours: Sat - Wed: 08.00am - 05.30pm </div>
+                    <div class="working">  <span class="icon-alarm"></span> Working Hours: Sat - Wed: 08.00am - 05.30pm </div>
                 </div>
             </div>
             <div class="col-6">
@@ -30,12 +30,8 @@
             <ul class="nav-links">
                 <li> <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $Home; ?> </a></li>
                 <li class="dropdown"> 
-                <span class="icon-chevron-thin-down"></span>
                     <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $AboutUs; ?> </a>
                     <div class="conter-linke-dropdown" data-menu = ".First-dropdwon-menu">
-                        <!-- <ul class="First-dropdwon-menu">
-                            <li> <a href="#" > navigator </a></li>
-                        </ul> -->
                     </div>
                 </li>
                 <li><a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $services; ?></a>  </li>
@@ -43,9 +39,10 @@
                 <span class="icon-chevron-thin-down"></span>
                     <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $blogs; ?></a>  
                     <div class="conter-linke-dropdown" data-menu = ".secound-dropdwon-menu">
-                        <!-- <ul class="secound-dropdwon-menu">
-                            <li> <a href="#" > navigator </a></li>
-                        </ul> -->
+                        <ul class="secound-dropdwon-menu">
+                            <li> <a href="#" > Blog </a></li>
+                            <li> <a href="#" > Events </a></li>
+                        </ul>
                     </div>
                 </li>
                 <li> <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $contact; ?></a> </li>

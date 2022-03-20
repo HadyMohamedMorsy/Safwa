@@ -2,6 +2,6 @@
     $Home = 'domicile';
     $AboutUs = 'À propos de nous';
     $services = 'service';
-    $blogs = 'blogs';
+    $blogs = 'Media Hub';
     $contact ='Nous contacter';
 ?>

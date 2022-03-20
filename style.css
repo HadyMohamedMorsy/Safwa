@@ -64,3 +64,15 @@
 .icon-key:before {
   content: "\e98d";
 }
+.icon-home:before {
+  content: "\e902";
+}
+.icon-alarm:before {
+  content: "\e950";
+}
+.icon-rss:before {
+  content: "\ea9b";
+}
+.icon-ello:before {
+  content: "\eab6";
+}
