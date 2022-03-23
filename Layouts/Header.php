@@ -1,64 +1,35 @@
-<div class="First-Nav">
-    <div class="contact-call container">
-        <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <div class="Phone"><a href="tel:+20 1001910493"> <span class="icon-phone"></span>  +20 1001910493 </a></div>
-                    <div class="working">  <span class="icon-alarm"></span> Working Hours: Sat - Wed: 08.00am - 05.30pm </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="follow">
-                    <div>
-                        <span> Follow : </span>
-                    </div>
-                    <a href=""> <span class="icon-facebook"></span> </a>
-                    <a href=""> <span class="icon-linkedin2"></span></a>
-                    <a href=""> <span class="icon-youtube"></span></a>
-                    <a href=""><span class="icon-instagram"></span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <nav>
     <header class="container">
-        <div class="logo"> 
-            <img src="assists/images/LogoSafwa.png" alt=""> 
-        </div>
         <div class="counter-linke">
             <ul class="nav-links">
-                <li> <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $Home; ?> </a></li>
-                <li class="dropdown"> 
-                    <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $AboutUs; ?> </a>
-                    <div class="conter-linke-dropdown" data-menu = ".First-dropdwon-menu">
-                    </div>
-                </li>
-                <li><a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $services; ?></a>  </li>
-                <li class="dropdown"> 
-                <span class="icon-chevron-thin-down"></span>
-                    <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $blogs; ?></a>  
-                    <div class="conter-linke-dropdown" data-menu = ".secound-dropdwon-menu">
-                        <ul class="secound-dropdwon-menu">
-                            <li> <a href="#" > Blog </a></li>
-                            <li> <a href="#" > Events </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li> <a href="#" style="<?php echo $Style_Text_Align ?>"> <?php echo $contact; ?></a> </li>
                 <li>
-                    <a href="?Lang=EN"> EN </a>
-                    <a href="?Lang=AR"> AR </a>
-                    <a href="?Lang=FR"> FR </a>
+                    <a href="?Lang=EN"><img src="assists/images/britch.jpg" alt=""/> <span> EN </span> </a>
+                </li>
+                <li>
+                    <a href="?Lang=AR"> <img src="assists/images/egypt.png" alt=""/> <span> AR </span> </a>
+                </li>
+                <li>
+                    <a href="?Lang=FR"> <img src="assists/images/French.png" alt=""/> <span> FR </span> </a>
                 </li>
             </ul>
+        </div>
+        <div class="logo"> 
+            <img src="assists/images/LogoSafwa.png" alt=""> 
         </div>
         <div class="burger">
             <span class="link-1"></span>
             <span class="link-2"></span>
             <span class="link-3"></span>
         </div>
+
     </header>
+    <a href="#" class="get-Quote">
+        <div class="content-shape">
+            <span> Get </span>  
+            <span> Quite </span>
+        </div>
+    </a>
 </nav>
 <div class="header-cover">
     <div class="image" data-src="" data-alt="">

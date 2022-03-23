@@ -20,30 +20,13 @@ $grid__cols: 12;
   }
 }
 
+// Color 
 
-:root {
-    --primary-color : #fff;
-    --primary-color-span : #041C32;
-    --primary-color-navbar : #f0f8ff;
-    --primary-color-links-hover : #f2601b;
-    --primary-color-links : #27357f;
-    --primary-color-Header : #f2601b;
-    --primary-color-Header-section : #27357f;
-    --primary-color-text : #7e8895;
-    --primary-color-box : #d2deec;
-    --primary-black: #000;
-}
+$white : #fff;
+$orange : #f2611c;
+$blue  : #27357f;
+$black : #000;
 
-.dark-mode {
-    --primary-color : #041C32;
-    --primary-color-navbar : #041C32;
-    --primary-color-span : #fff;
-    --primary-color-links-hover : #f2601b;
-    --primary-color-links : #27357f;
-    --primary-color-Header : #f2601b;
-    --primary-color-text : #fff;
-    --primary-color-box : #d2deec;
-}
 
 *{
     padding: 0px;

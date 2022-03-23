@@ -14,13 +14,11 @@
 <head>
     
     <!-- Start The meta -->
-      <?php include ("Links CSS In Head Area.php"); ?>
+    <?php include ("Links CSS In Head Area.php"); ?>
     <!-- End The meta -->
     <title>  Home </title>
 
     <!-- Start The Links Files -->
-    <link rel="stylesheet" href="./assists/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assists/owl.theme.default.min.css">
     <link rel="stylesheet" href="assists/Home/Home.css">
     <!-- End The Links Files -->
 
@@ -39,12 +37,9 @@
     <!-- End The Footer-->
 
     <!-- Start The Links Files -->
-    <script src="./Javascript-Files/jquery.js"></script>
-    <script src="./Javascript-Files/owl.carousel.min.js"></script>
     <script src="Javascript-Files/demo.js"></script>
     <script src="Javascript-Files/menu.js"></script>
     <script src="Javascript-Files/Slider.js"></script>
-    <script src="./Javascript-Files/carowsel-owl.js"></script>
     <!-- End The Links Files -->
 </body>
 

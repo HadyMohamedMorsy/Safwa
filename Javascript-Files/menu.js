@@ -7,7 +7,6 @@ let menu = document.querySelector('.nav-links');
 const navigator = () =>{
     
 
-
     let counterList  =  menuList.getBoundingClientRect().height;
 
     let containerHight =  menu.getBoundingClientRect().height;
