@@ -1,170 +1,304 @@
 
+// header all
 
-// nav
-nav {
-	background-color: $white;
-	padding: 10px 0px;
-	color: $orange;
-	position: relative;
-	overflow-x: hidden;
-	// header
-	header {
-		@include prefix(display, flex, webkit ms o);
-		@include prefix(justify-content, space-between, webkit ms o);
-		@include prefix(align-items, center, webkit ms o);
-		.counter-linke{
-			overflow: hidden;
-			position: relative;
-			width: 25%;
-			height: 30px;
-			display: flex;
-			justify-content: flex-end;
-			transition: all 1s;
-			&:hover{
-				height: 100px;
+header{
+// pop menu 
+position: relative;
+.menu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba($blue, 0.8);
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	display: none;
+	ul{
+		font-size: 60px;
+		li{
+			a{
+				color: $white;
+				position: relative;
+				&::after{
+					content: "";
+					position: absolute;
+					width: 0%;
+					height: 2px;
+					bottom: 5px;
+					left: 0px;
+					background-color: $white;
+					transition: width 0.5s;
+				}
+				&:hover{
+					&::after{
+						width: 100%;
+					}
+				}
 			}
 			ul{
-				position: absolute;
-				top: 0px;
+				display: flex;
 				li{
-					margin-bottom: 5px;
-					a{
-						img{
-							width: 25px;
-							height: 25px;
-							vertical-align: middle;
+						font-size: 30px;
+						&:first-child{
+							margin-left: 0px;
 						}
-						span{
-							font-size: 18px;
+							margin-left: 20px;
+						a{
+							color: $white;
+							position: relative;
+							&::after{
+								content: "";
+								position: absolute;
+								width: 0%;
+								height: 2px;
+								bottom: 5px;
+								left: 0px;
+								background-color: $white;
+								transition: width 0.5s;
+							}
+							&:hover{
+								&::after{
+									width: 100%;
+								}
+							}
 						}
 					}
 				}
 			}
-		
-		}
-		.burger{
-			cursor: pointer;
-			overflow: hidden;
-			width: 50px;
-			height: 20px;
-			position: relative;
-			span{
-				display: block;
-				width: 40px;
-				height: 3px;
-				background-color: #000;
-				margin-bottom: 5px;
-				
-			}
-			span{
-				&:first-child{
-					margin-left: -20px;
-				}
-				&:last-child{
-					position: absolute;
-					left: 20px;
-				}
-			}
-			span:lang(ar){
-				&:first-child{
-					margin-right: -20px;
-				}
-				&:last-child{
-					position: absolute;
-					right: 20px;
-				}
-			}
 		}
 	}
-	.get-Quote{
-		position: absolute;
-		top: -63px;
-		left: -40px;
-		background-color: $orange;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		padding: 20px;
-		border-radius: 50%;
-		width: 180px;
-		height: 180px;
-		transition: all 0.5s;
-		&:hover{
-			background-color: $black;
-			transform: scale(1.03);
-		}
-		@media (max-width : 991px) {
-			display: none;
-		}
-		z-index: 2;
-		color: $white;
-		.content-shape{
-			margin-top: 30px;
-			display: flex;
-			flex-direction: column;
-			span{
-				font-size: 22px;
-				color: $white;
-				font-weight: bold;
-				@media (max-width : 991px) {
-					font-size: 14px;
-					font-weight: bold;
-				}
-			}
-		}
-	}
-	// header
-
-}
-
-// nav
-// header image
-.header-cover{
-	.image{
-		color: #fff;
-		.image-content{
-			width: 100%;
-			overflow: hidden;
-			position: relative;
-			img{
-				width: 100%;
-				object-fit: cover;
-				opacity: .7;
+	
+	// nav
+	nav {
+		background-color: $white;
+		padding: 10px 0px;
+		color: $orange;
+		position: relative;
+		overflow-x: hidden;
+		// header
+		.header {
+			@include prefix(display, flex, webkit ms o);
+			@include prefix(justify-content, space-between, webkit ms o);
+			@include prefix(align-items, center, webkit ms o);
+			.counter-linke{
+				overflow: hidden;
 				position: relative;
-				display: block;
-				@include prefix(filter, grayscale(70%), webkit ms o);
-			}
-			.content-image{
-				width: 100%;
-				position: absolute;
-				top: 50%;
-				@include prefix(transform, translateY(-50%), webkit ms o);
-				z-index: 1;
-				.content-image-content{
-					h3{
-						font-size: $headerSection;
-						@media (max-width : 991px) {
-							font-size: $headersmall;
+				@media (min-width : 1024px) {
+					width: 25%;
+				}
+				width: 80px;
+				height: 30px;
+				display: flex;
+				justify-content: flex-end;
+				transition: height 1s;
+				&:hover{
+					height: 100px;
+				}
+				ul{
+					position: absolute;
+					top: 0px;
+					text-align: right;
+					width: 100%;
+					li{
+						margin-bottom: 5px;
+						cursor: pointer;
+						a{
+							img{
+								width: 25px;
+								height: 25px;
+								vertical-align: middle;
+							}
+							span{
+								font-size: 18px;
+								font-weight: bold;
+								color: #000;
+							}
 						}
-						max-width: 200px;
-						font-weight: bold;
 					}
-
-					p{
-						font-size: $fonttext;
-						@media (max-width : 767px) {
-							font-size: $fontsmall;
-						}
-						letter-spacing: 1px;
-						line-height: 30px;
+				}
+			
+			}
+			.burger{
+				cursor: pointer;
+				overflow: hidden;
+				width: 50px;
+				height: 20px;
+				position: relative;
+				span{
+					display: block;
+					width: 40px;
+					height: 3px;
+					background-color: #000;
+					margin-bottom: 5px;
+					
+				}
+				span{
+					&:first-child{
+						margin-left: -20px;
+					}
+					&:last-child{
+						position: absolute;
+						left: 20px;
+					}
+				}
+				span:lang(ar){
+					&:first-child{
+						margin-right: -20px;
+					}
+					&:last-child{
+						position: absolute;
+						right: 20px;
+					}
+				}
+			}
+		}
+		.get-Quote{
+			position: absolute;
+			top: -63px;
+			left: -40px;
+			background-color: $orange;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 20px;
+			border-radius: 50%;
+			width: 180px;
+			height: 180px;
+			transition: all  0.5s;
+			&:hover{
+				background-color: $black;
+				transform: scale(1.03);
+			}
+			@media (max-width : 991px) {
+				display: none;
+			}
+			z-index: 2;
+			color: $white;
+			.content-shape{
+				margin-top: 30px;
+				display: flex;
+				flex-direction: column;
+				span{
+					font-size: 22px;
+					color: $white;
+					font-weight: bold;
+					@media (max-width : 991px) {
+						font-size: 14px;
 						font-weight: bold;
 					}
 				}
-
 			}
 		}
-
+		.get-Quote:lang(ar){
+			position: absolute;
+			top: -63px;
+			right: -30px;
+			background-color: $orange;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 20px;
+			border-radius: 50%;
+			width: 180px;
+			height: 180px;
+			transition: all  0.5s;
+			&:hover{
+				background-color: $black;
+				transform: scale(1.03);
+			}
+			@media (max-width : 991px) {
+				display: none;
+			}
+			z-index: 2;
+			color: $white;
+			.content-shape{
+				margin-top: 30px;
+				display: flex;
+				flex-direction: column;
+				span{
+					font-size: 22px;
+					color: $white;
+					font-weight: bold;
+					@media (max-width : 991px) {
+						font-size: 14px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		// header
+	
 	}
+	// nav
+
+	// header image
+	.header-cover{
+		.image{
+			color: #fff;
+			.image-content{
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+				img{
+					width: 100%;
+					object-fit: cover;
+					opacity: .7;
+					position: relative;
+					display: block;
+					@include prefix(filter, grayscale(70%), webkit ms o);
+				}
+				.content-image{
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					@include prefix(transform, translateY(-50%), webkit ms o);
+					z-index: 1;
+					.content-image-content{
+						h3{
+							font-size: $headerSection;
+							@media (max-width : 991px) {
+								font-size: $headersmall;
+							}
+							max-width: 200px;
+							font-weight: bold;
+						}
+
+						p{
+							font-size: $fonttext;
+							@media (max-width : 767px) {
+								font-size: $fontsmall;
+							}
+							letter-spacing: 1px;
+							line-height: 30px;
+							font-weight: bold;
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+	// header image
 }
-// header image
+
+
+
+
+
+
+
+
+
+
+
+

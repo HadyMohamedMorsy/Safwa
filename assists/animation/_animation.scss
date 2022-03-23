@@ -1,4 +1,4 @@
-@-webkit-keyframes mymove {
+    @-webkit-keyframes mymove {
     from {
         transform: translateX(-1000px)
     }
@@ -18,7 +18,7 @@
 
     @-webkit-keyframes ImageSlider {
         from {
-			opacity: .7;
+            opacity: .7;
             transform: scale(1);
         }
         to {
@@ -26,22 +26,20 @@
             transform: scale(1.2)
         }
         }
-    
-        @keyframes ImageSlider {
-            from {
-    		    opacity: .7;
-                transform: scale(1);
-                display: block;
-            }
-            to {
-                opacity: 1;
-                transform: scale(1.3);
 
-            }
+    @keyframes ImageSlider {
+        from {
+            opacity: .7;
+            transform: scale(1);
+            display: block;
         }
-        
+        to {
+            opacity: 1;
+            transform: scale(1.3);
 
-
+        }
+    }
+    
     .mangetranslate{
 
         animation: mymove 2s;

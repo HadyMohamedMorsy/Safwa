@@ -389,7 +389,99 @@ li {
   object-fit: cover;
 }
 
-nav {
+header {
+  position: relative;
+}
+
+header .menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(39, 53, 127, 0.8);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+header .menu ul {
+  font-size: 60px;
+}
+
+header .menu ul li a {
+  color: #fff;
+  position: relative;
+}
+
+header .menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 5px;
+  left: 0px;
+  background-color: #fff;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+header .menu ul li a:hover::after {
+  width: 100%;
+}
+
+header .menu ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu ul li ul li {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+header .menu ul li ul li:first-child {
+  margin-left: 0px;
+}
+
+header .menu ul li ul li a {
+  color: #fff;
+  position: relative;
+}
+
+header .menu ul li ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 5px;
+  left: 0px;
+  background-color: #fff;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+header .menu ul li ul li a:hover::after {
+  width: 100%;
+}
+
+header nav {
   background-color: #fff;
   padding: 10px 0px;
   color: #f2611c;
@@ -397,7 +489,7 @@ nav {
   overflow-x: hidden;
 }
 
-nav header {
+header nav .header {
   -webkit-display: flex;
   -ms-display: flex;
   -o-display: flex;
@@ -415,10 +507,10 @@ nav header {
           align-items: center;
 }
 
-nav header .counter-linke {
+header nav .header .counter-linke {
   overflow: hidden;
   position: relative;
-  width: 25%;
+  width: 80px;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,34 +518,45 @@ nav header .counter-linke {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: height 1s;
+  transition: height 1s;
 }
 
-nav header .counter-linke:hover {
+@media (min-width: 1024px) {
+  header nav .header .counter-linke {
+    width: 25%;
+  }
+}
+
+header nav .header .counter-linke:hover {
   height: 100px;
 }
 
-nav header .counter-linke ul {
+header nav .header .counter-linke ul {
   position: absolute;
   top: 0px;
+  text-align: right;
+  width: 100%;
 }
 
-nav header .counter-linke ul li {
+header nav .header .counter-linke ul li {
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
-nav header .counter-linke ul li a img {
+header nav .header .counter-linke ul li a img {
   width: 25px;
   height: 25px;
   vertical-align: middle;
 }
 
-nav header .counter-linke ul li a span {
+header nav .header .counter-linke ul li a span {
   font-size: 18px;
+  font-weight: bold;
+  color: #000;
 }
 
-nav header .burger {
+header nav .header .burger {
   cursor: pointer;
   overflow: hidden;
   width: 50px;
@@ -461,7 +564,7 @@ nav header .burger {
   position: relative;
 }
 
-nav header .burger span {
+header nav .header .burger span {
   display: block;
   width: 40px;
   height: 3px;
@@ -469,25 +572,25 @@ nav header .burger span {
   margin-bottom: 5px;
 }
 
-nav header .burger span:first-child {
+header nav .header .burger span:first-child {
   margin-left: -20px;
 }
 
-nav header .burger span:last-child {
+header nav .header .burger span:last-child {
   position: absolute;
   left: 20px;
 }
 
-nav header .burger span:lang(ar):first-child {
+header nav .header .burger span:lang(ar):first-child {
   margin-right: -20px;
 }
 
-nav header .burger span:lang(ar):last-child {
+header nav .header .burger span:lang(ar):last-child {
   position: absolute;
   right: 20px;
 }
 
-nav .get-Quote {
+header nav .get-Quote {
   position: absolute;
   top: -63px;
   left: -40px;
@@ -509,25 +612,25 @@ nav .get-Quote {
   border-radius: 50%;
   width: 180px;
   height: 180px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all  0.5s;
+  transition: all  0.5s;
   z-index: 2;
   color: #fff;
 }
 
-nav .get-Quote:hover {
+header nav .get-Quote:hover {
   background-color: #000;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
 @media (max-width: 991px) {
-  nav .get-Quote {
+  header nav .get-Quote {
     display: none;
   }
 }
 
-nav .get-Quote .content-shape {
+header nav .get-Quote .content-shape {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,30 +641,94 @@ nav .get-Quote .content-shape {
           flex-direction: column;
 }
 
-nav .get-Quote .content-shape span {
+header nav .get-Quote .content-shape span {
   font-size: 22px;
   color: #fff;
   font-weight: bold;
 }
 
 @media (max-width: 991px) {
-  nav .get-Quote .content-shape span {
+  header nav .get-Quote .content-shape span {
     font-size: 14px;
     font-weight: bold;
   }
 }
 
-.header-cover .image {
+header nav .get-Quote:lang(ar) {
+  position: absolute;
+  top: -63px;
+  right: -30px;
+  background-color: #f2611c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  -webkit-transition: all  0.5s;
+  transition: all  0.5s;
+  z-index: 2;
   color: #fff;
 }
 
-.header-cover .image .image-content {
+header nav .get-Quote:lang(ar):hover {
+  background-color: #000;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  header nav .get-Quote:lang(ar) {
+    display: none;
+  }
+}
+
+header nav .get-Quote:lang(ar) .content-shape {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header nav .get-Quote:lang(ar) .content-shape span {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  header nav .get-Quote:lang(ar) .content-shape span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+header .header-cover .image {
+  color: #fff;
+}
+
+header .header-cover .image .image-content {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.header-cover .image .image-content img {
+header .header-cover .image .image-content img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -574,7 +741,7 @@ nav .get-Quote .content-shape span {
   filter: grayscale(70%);
 }
 
-.header-cover .image .image-content .content-image {
+header .header-cover .image .image-content .content-image {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -583,19 +750,19 @@ nav .get-Quote .content-shape span {
   z-index: 1;
 }
 
-.header-cover .image .image-content .content-image .content-image-content h3 {
+header .header-cover .image .image-content .content-image .content-image-content h3 {
   font-size: 40px;
   max-width: 200px;
   font-weight: bold;
 }
 
 @media (max-width: 991px) {
-  .header-cover .image .image-content .content-image .content-image-content h3 {
+  header .header-cover .image .image-content .content-image .content-image-content h3 {
     font-size: 25px;
   }
 }
 
-.header-cover .image .image-content .content-image .content-image-content p {
+header .header-cover .image .image-content .content-image .content-image-content p {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 30px;
@@ -603,7 +770,7 @@ nav .get-Quote .content-shape span {
 }
 
 @media (max-width: 767px) {
-  .header-cover .image .image-content .content-image .content-image-content p {
+  header .header-cover .image .image-content .content-image .content-image-content p {
     font-size: 14px;
   }
 }
