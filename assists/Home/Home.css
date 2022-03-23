@@ -61,6 +61,50 @@
   display: block !important;
 }
 
+@-webkit-keyframes menu {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes menu {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes secoundtranslate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes secoundtranslate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 .col-1 {
   -ms-flex-preferred-size: 8.33333%;
       flex-basis: 8.33333%;
@@ -417,19 +461,52 @@ header .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: menu 0.5s linear;
+          animation: menu 0.5s linear;
   display: none;
 }
 
-header .menu ul {
+header .menu .burger-menu {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
+}
+
+header .menu .burger-menu span {
+  background-color: #fff;
+  width: 50px;
+  height: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+header .menu .burger-menu .link-1 {
+  -webkit-transform: rotate(45deg) translate(9px, 8px);
+          transform: rotate(45deg) translate(9px, 8px);
+}
+
+header .menu .burger-menu .link-2 {
+  -webkit-transform: rotate(-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0px);
+}
+
+header .menu .parent-list {
   font-size: 60px;
+  margin-top: 100px;
 }
 
-header .menu ul li a {
+header .menu .parent-list li a {
   color: #fff;
+  display: block;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-header .menu ul li a::after {
+header .menu .parent-list li a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -441,31 +518,35 @@ header .menu ul li a::after {
   transition: width 0.5s;
 }
 
-header .menu ul li a:hover::after {
+header .menu .parent-list li a:hover {
+  padding-left: 25px;
+}
+
+header .menu .parent-list li a:hover::after {
   width: 100%;
 }
 
-header .menu ul li ul {
+header .menu .parent-list li ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .menu ul li ul li {
+header .menu .parent-list li ul li {
   font-size: 30px;
   margin-left: 20px;
 }
 
-header .menu ul li ul li:first-child {
+header .menu .parent-list li ul li:first-child {
   margin-left: 0px;
 }
 
-header .menu ul li ul li a {
+header .menu .parent-list li ul li a {
   color: #fff;
   position: relative;
 }
 
-header .menu ul li ul li a::after {
+header .menu .parent-list li ul li a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -477,7 +558,7 @@ header .menu ul li ul li a::after {
   transition: width 0.5s;
 }
 
-header .menu ul li ul li a:hover::after {
+header .menu .parent-list li ul li a:hover::after {
   width: 100%;
 }
 
@@ -562,6 +643,15 @@ header nav .header .burger {
   width: 50px;
   height: 20px;
   position: relative;
+  cursor: pointer;
+}
+
+header nav .header .burger:hover span:first-child {
+  margin-left: 0px;
+}
+
+header nav .header .burger:hover span:last-child {
+  left: 0px;
 }
 
 header nav .header .burger span {
@@ -570,6 +660,8 @@ header nav .header .burger span {
   height: 3px;
   background-color: #000;
   margin-bottom: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header nav .header .burger span:first-child {
@@ -773,5 +865,15 @@ header .header-cover .image .image-content .content-image .content-image-content
   header .header-cover .image .image-content .content-image .content-image-content p {
     font-size: 14px;
   }
+}
+
+.nav.active {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.header-cover.active {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 /*# sourceMappingURL=Home.css.map */

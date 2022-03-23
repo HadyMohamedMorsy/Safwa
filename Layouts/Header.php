@@ -2,12 +2,17 @@
 <header>
     <!-- pop Menu  -->
         <div class="menu">
+            <div class="burger-menu">
+                <span class="link-1"></span>
+                <span class="link-2"></span>
+            </div>
             <div class="container">
                 <div class="row">
-                    <ul>
+                    <ul class="parent-list">
                         <li> 
                             <a href="#">
-                                Home</a>
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="#">
@@ -44,7 +49,7 @@
             </div>
         </div>
     <!-- pop Menu  -->
-    <nav>
+    <nav class="nav">
         <div class="container header">
             <div class="counter-linke">
                 <ul class="nav-links">
