@@ -1,0 +1,94 @@
+.about-safwa{
+    .company{
+        text-transform: uppercase;
+        font-size: $header;
+        @media (max-width : 991px) {
+            font-size: $headersmall;
+        }
+    }
+    p{
+        font-size: $normaltext;
+        @media (max-width : 991px) {
+            font-size: $headersmall;
+        }
+    }
+
+    .section-parent-us{
+        margin-top: 50px;
+        padding: 30px 0px;
+        h2{
+            font-size: $header;
+            font-weight: 400;
+        }
+        .last-line{
+            font-size: $header;
+            font-weight: bold;
+            color: $orange;
+        }
+        ul{
+            list-style: circle;
+            padding-left: 10px;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .section-right{
+            position: relative;
+            padding: 30px;
+            color: $white;
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: $orange;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                z-index: -1;
+                left: 0px;
+                @media (min-width: 1024px){
+                    transform: skewX(10deg);
+                    left: -10px;
+                    padding: 30px;
+                }
+            }
+            a{
+                display: block;
+                background-color: $blue;
+                padding: 10px;
+                color: #fff;
+                text-align: center;
+                width: 180px;
+                margin-top: 15px;
+                margin-left: 10px;
+                position: relative;
+                font-family: sans-serif;
+                transition: all 0.4s;
+                span{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    font-size: 17px;
+                    transition: 0.4s;
+                    display: block;
+                }
+                &:hover{
+                    background-color: $black;
+                    span{
+                        right: 10px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                @media (min-width : 1024px) {
+                    transform: scale(1.8);
+
+                }
+                vertical-align: middle;
+            }
+        }
+    }
+
+}

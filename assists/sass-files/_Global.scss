@@ -23,7 +23,7 @@ $grid__cols: 12;
 // Color 
 
 $white : #fff;
-$orange : #f2611c;
+$orange : #fe5627;
 $blue  : #27357f;
 $black : #000;
 
@@ -32,7 +32,8 @@ $black : #000;
     padding: 0px;
     margin: 0px;
     @include prefix(box-sizing, border-box, webkit ms o);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sorts Mill Goudy', serif;
+
 
 
 }
@@ -41,7 +42,6 @@ body{
     line-height: 1.5;
     padding: 0;
     margin: 0;
-
 }
 // links 
 
@@ -57,6 +57,7 @@ a {
 	padding-left: $paddingLeftRowContainer;
 	padding-right: $paddingRightRowContainer;
 }
+
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
@@ -95,6 +96,9 @@ li{
 .center{
     text-align: center
 }
+.center-flex{
+    @include prefix(justify-content,center, webkit ms o);
+}
 .grid-layout{
     @include prefix(display,grid, webkit ms o);
     @include prefix(grid-template-columns, repeat(auto-fill, minmax(350px, 1fr)), webkit ms o);
@@ -123,3 +127,9 @@ li{
     height: 100px;
     @include prefix(object-fit,cover, webkit ms o);
 }
+
+.margin-between-section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+

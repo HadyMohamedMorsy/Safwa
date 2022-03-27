@@ -304,7 +304,7 @@
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Sorts Mill Goudy', serif;
 }
 
 body {
@@ -374,6 +374,14 @@ li {
   text-align: center;
 }
 
+.center-flex {
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .grid-layout {
   -webkit-display: grid;
   -ms-display: grid;
@@ -431,6 +439,11 @@ li {
   -ms-object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.margin-between-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 header {
@@ -565,7 +578,7 @@ header .menu .parent-list li ul li a:hover::after {
 header nav {
   background-color: #fff;
   padding: 10px 0px;
-  color: #f2611c;
+  color: #fe5627;
   position: relative;
   overflow-x: hidden;
 }
@@ -686,7 +699,7 @@ header nav .get-Quote {
   position: absolute;
   top: -63px;
   left: -40px;
-  background-color: #f2611c;
+  background-color: #fe5627;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,7 +763,7 @@ header nav .get-Quote:lang(ar) {
   position: absolute;
   top: -63px;
   right: -30px;
-  background-color: #f2611c;
+  background-color: #fe5627;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,12 +863,12 @@ header .header-cover .image .image-content .content-image .content-image-content
 
 @media (max-width: 991px) {
   header .header-cover .image .image-content .content-image .content-image-content h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 header .header-cover .image .image-content .content-image .content-image-content p {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   line-height: 30px;
   font-weight: bold;
@@ -875,5 +888,176 @@ header .header-cover .image .image-content .content-image .content-image-content
 .header-cover.active {
   -webkit-filter: blur(10px);
           filter: blur(10px);
+}
+
+.about-safwa .company {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+@media (max-width: 991px) {
+  .about-safwa .company {
+    font-size: 20px;
+  }
+}
+
+.about-safwa p {
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .about-safwa p {
+    font-size: 20px;
+  }
+}
+
+.about-safwa .section-parent-us {
+  margin-top: 50px;
+  padding: 30px 0px;
+}
+
+.about-safwa .section-parent-us h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.about-safwa .section-parent-us .last-line {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fe5627;
+}
+
+.about-safwa .section-parent-us ul {
+  list-style: circle;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.about-safwa .section-parent-us .section-right {
+  position: relative;
+  padding: 30px;
+  color: #fff;
+}
+
+.about-safwa .section-parent-us .section-right::after {
+  content: "";
+  position: absolute;
+  background-color: #fe5627;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
+  left: 0px;
+}
+
+@media (min-width: 1024px) {
+  .about-safwa .section-parent-us .section-right::after {
+    -webkit-transform: skewX(10deg);
+            transform: skewX(10deg);
+    left: -10px;
+    padding: 30px;
+  }
+}
+
+.about-safwa .section-parent-us .section-right a {
+  display: block;
+  background-color: #27357f;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  width: 180px;
+  margin-top: 15px;
+  margin-left: 10px;
+  position: relative;
+  font-family: sans-serif;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.about-safwa .section-parent-us .section-right a span {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  font-size: 17px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+}
+
+.about-safwa .section-parent-us .section-right a:hover {
+  background-color: #000;
+}
+
+.about-safwa .section-parent-us .section-right a:hover span {
+  right: 10px;
+}
+
+.about-safwa .section-parent-us .section-right img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media (min-width: 1024px) {
+  .about-safwa .section-parent-us .section-right img {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+  }
+}
+
+.number-server {
+  background: url("../images/bg-2.jpg");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.number-server .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.number-server .content-on-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.number-server .content-on-section .title-serve {
+  background-color: rgba(254, 86, 39, 0.6);
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  padding: 30px 80px;
+}
+
+.number-server .content-on-section .content-Details {
+  padding: 15px;
+}
+
+.number-server .content-on-section .content-Details p {
+  font-size: 60px;
+  color: #fff;
+}
+
+.number-server .content-on-section .content-Details span {
+  color: #fe5627;
+  font-size: 18px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=Home.css.map */

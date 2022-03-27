@@ -311,9 +311,9 @@ position: relative;
 						}
 
 						p{
-							font-size: $fonttext;
+							font-size: $normaltext;
 							@media (max-width : 767px) {
-								font-size: $fontsmall;
+								font-size: $smalltext;
 							}
 							letter-spacing: 1px;
 							line-height: 30px;

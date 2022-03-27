@@ -1,0 +1,47 @@
+// number
+.number-server{
+    background: url('../images/bg-2.jpg');
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .overlay{
+        background-color: rgba(#000,0.7);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .content-on-section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 100%;
+        .title-serve{
+            background-color: rgba($orange,0.6);
+            padding: 15px;
+            color: $white;
+            text-align: center;
+            font-size: $header;
+            padding: 30px 80px;
+            
+        }
+        .content-Details{
+            padding: 15px;
+            p{
+                font-size: 60px;
+                color: $white;
+            }
+            span{
+                color: $orange;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+// number
