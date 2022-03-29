@@ -1561,6 +1561,60 @@ header .header-cover .image .image-content .content-image .content-image-content
   text-align: center;
 }
 
+.products .title {
+  color: #fe5627;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.products .image-product {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.products .image-product img {
+  width: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.products .image-product:hover .content-title-project {
+  top: 0px;
+}
+
+.products .image-product:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.products .image-product .content-title-project {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fe5627;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .form .input-group > .input:focus ~ .label-name .content-name,
 .form .input-group > .input:valid ~ .label-name .content-name {
   -webkit-transform: translateY(-100%);
@@ -1632,7 +1686,7 @@ header .header-cover .image .image-content .content-image .content-image-content
   font-weight: bold;
 }
 
-.products .title {
+.work .title {
   color: #fe5627;
   font-weight: bold;
   font-size: 30px;
@@ -1640,49 +1694,42 @@ header .header-cover .image .image-content .content-image .content-image-content
   text-transform: uppercase;
 }
 
-.products .image-product {
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.products .image-product img {
-  width: 100%;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.products .image-product:hover .content-title-project {
-  top: 0px;
-}
-
-.products .image-product:hover img {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.products .image-product .content-title-project {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 97%;
-  background-color: rgba(0, 0, 0, 0.5);
+.work .button-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fe5627;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  font-size: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work .button-filter span {
+  display: block;
+  background-color: #fff;
+  border: 2px solid #d1d1d1;
+  padding: 10px 15px;
+  cursor: pointer;
   font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.work .button-filter span.active {
+  background-color: #fe5627;
+  border: 2px solid #fe5627;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+}
+
+.work .button-filter span.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fe5627;
+  top: -15px;
+  left: 0px;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -245,7 +245,7 @@
 <!-- Contact Us  -->
 
 <!-- Testemonials -->
-<div class="testemonials margin-between-section">
+<section class="testemonials margin-between-section">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -303,11 +303,11 @@
             <span></span>
         </div>
     </div>
-</div>
+</section>
 <!-- Testemonials -->
 
 <!-- services -->
-<div class="services margin-between-section">
+<section class="services margin-between-section">
     <div class="container">
         <div class="row center-flex">
             <h2 class="title"> Our Services </h2>
@@ -337,11 +337,11 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- services -->
 
 <!-- team -->
-<div class="team margin-between-section">
+<section class="team margin-between-section">
     <div class="container">
         <div class="row content-header-team align-item-center no-margin">
             <div class="col-6">
@@ -405,11 +405,11 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- team -->
 
 <!-- products -->
-<div class="products margin-between-section">
+<section class="products margin-between-section">
     <div class="container">
         <div class="row">
             <h2 class="title"> Our <span> Products</span> </h2>
@@ -465,20 +465,33 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- products -->
 
 <!-- Our Work -->
-<div class="work">
+<section class="work margin-between-section">
     <div class="container">
         <div class="row">
+            <div class="col-6">
+                <span> Our Work </span>
+                <h2 class="title"> Recent Projects </h2>
+            </div>
+            <div class="col-6">
+                <div class="button-filter">
+                    <span class="active"> All </span>
+                    <span> Factory </span>
+                    <span> Industory </span>
+                    <span>Materials </span>
+                    <span>Mechanicals </span>
+                </div>
+            </div>
 
         </div>
         <div class="row">
             
         </div>
     </div>
-</div>
+</section>
 
 <!-- Our Work -->
 
