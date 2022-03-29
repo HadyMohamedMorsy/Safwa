@@ -6,6 +6,13 @@
     // Output standard non-prefixed declaration
     #{$property}: $value;
 }
+@mixin cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+}
 
 $grid__cols: 12;
 @for $i from 1 through $grid__cols {
@@ -126,8 +133,8 @@ li{
 }
 
 .margin-between-section{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .align-item-center{
@@ -147,3 +154,7 @@ li{
     margin-bottom: 80px;
 }
 
+.no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}

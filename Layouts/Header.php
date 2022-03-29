@@ -15,7 +15,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="About.php">
                                 About Us
                             </a>
                         </li>

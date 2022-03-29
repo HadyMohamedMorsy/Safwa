@@ -775,21 +775,81 @@
 }
 // news
 
+
+
+
 // footer 
 .footer{
     background-color: $black;
     padding: 20px;
     color: $white;
+
     .logo{
         img{
             width: 100%;
+            vertical-align: middle;
         }
     }
-    p{
+    .breif{
         margin-top: 40px;
+    }
+    .social-media{
+        margin-top: 20px;
+        display: flex;
+        h6{
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        a{
+            color: $white;
+            font-size: 18px;
+            span{
+                margin-right: 20px;
+            }
+        }
+
+    }
+    .content-links{
+        padding-top: 40px;
+        ul{
+
+            li{
+                a{
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .details-safwa{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            span{
+                margin-right: 10px;
+            }
+            a{
+                color: $white;
+            }
+        }
     }
 }
 // footer
+
+// copy
+.copyright{
+    background-color:#171717;
+    padding: 20px;
+    color: $white;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: $white;
+        }
+    }
+}
+// copy 
 
 
 

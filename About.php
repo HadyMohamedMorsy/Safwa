@@ -19,7 +19,7 @@
     <title>  Home </title>
 
     <!-- Start The Links Files -->
-    <link rel="stylesheet" href="assists/Home/Home.css">
+    <link rel="stylesheet" href="assists/About/about.css">
     <!-- End The Links Files -->
 
 </head>
@@ -27,10 +27,10 @@
 <body>
 
     <!-- Start The Header -->
-    <?php include ("Layouts/Header-pages.php"); ?>
+    <?php include ("Layouts/header-pages.php"); ?>
     <!-- End The Header-->
 
-    <?php include ("Layouts/index-Body.php"); ?>
+    <?php include ("Layouts/About-body.php"); ?>
 
     <!-- Start The Footer -->
     <?php  include ("Layouts/Footer.php"); ?>
@@ -39,19 +39,8 @@
     <!-- Start The Links Files -->
     <script src="Javascript-Files/demo.js"></script>
     <script src="Javascript-Files/menu.js"></script>
-    <script src="Javascript-Files/Slider.js"></script>
-    <script src="Javascript-Files/vanila-tilt.js"></script>
     <!-- End The Links Files -->
 
-    <!-- script normal  -->
-        <script type="text/javascript">
-            VanillaTilt.init(document.querySelectorAll(".image-product"), {
-                max: 25,
-                speed: 400
-            });
-        
-        </script>
-    <!-- script normal  -->
 </body>
 
 </html>
