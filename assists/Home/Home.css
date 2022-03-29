@@ -346,7 +346,7 @@ a {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1250px;
   }
 }
 
@@ -1457,37 +1457,6 @@ header .header-cover .image .image-content .content-image .content-image-content
   position: relative;
 }
 
-.team .arrorws {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.team .arrorws span {
-  font-size: 40px;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.team .arrorws span:hover {
-  color: #fe5627;
-}
-
 .team .content-header-team {
   background-color: #f3f3f3;
   padding: 20px 20px 100px 20px;
@@ -1549,9 +1518,9 @@ header .header-cover .image .image-content .content-image .content-image-content
   background-color: #eee;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .team .image-team {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1660,6 +1629,60 @@ header .header-cover .image .image-content .content-image .content-image-content
 .number-server .content-on-section .content-Details span {
   color: #fe5627;
   font-size: 18px;
+  font-weight: bold;
+}
+
+.products .title {
+  color: #fe5627;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.products .image-product {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.products .image-product img {
+  width: 100%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.products .image-product:hover .content-title-project {
+  top: 0px;
+}
+
+.products .image-product:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.products .image-product .content-title-project {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fe5627;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  font-size: 20px;
   font-weight: bold;
 }
 /*# sourceMappingURL=Home.css.map */

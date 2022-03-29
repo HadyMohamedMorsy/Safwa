@@ -342,11 +342,6 @@
 
 <!-- team -->
 <div class="team margin-between-section">
-    <div class="arrorws">
-        <span class="icon-arrow-left2"></span>
-        <span class="icon-arrow-right2"></span>
-
-    </div>
     <div class="container">
         <div class="row content-header-team align-item-center no-margin">
             <div class="col-6">
@@ -367,7 +362,7 @@
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                     <div class="details-person">
                         <h2> Sara Ahmed </h2>
-                        <span> Engneering</span>
+                        <span> Engineer</span>
                     </div>
                 </div>
                 <div class="description-job">
@@ -382,7 +377,7 @@
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                     <div class="details-person">
                         <h2> Sara Ahmed </h2>
-                        <span> Engneering</span>
+                        <span> Engineer</span>
                     </div>
                 </div>
                 <div class="description-job">
@@ -398,7 +393,7 @@
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                     <div class="details-person">
                         <h2> Sara Ahmed </h2>
-                        <span> Engneering</span>
+                        <span> Engineer</span>
                     </div>
                 </div>
                 <div class="description-job">
@@ -412,4 +407,78 @@
     </div>
 </div>
 <!-- team -->
+
+<!-- products -->
+<div class="products margin-between-section">
+    <div class="container">
+        <div class="row">
+            <h2 class="title"> Our <span> Products</span> </h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Sheveling </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Pallet Racking</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Mezzanine </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Handling Equipment </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Lockers and Cabinets </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Sheveling </h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- products -->
+
+<!-- Our Work -->
+<div class="work">
+    <div class="container">
+        <div class="row">
+
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
+</div>
+
+<!-- Our Work -->
 

@@ -40,7 +40,18 @@
     <script src="Javascript-Files/demo.js"></script>
     <script src="Javascript-Files/menu.js"></script>
     <script src="Javascript-Files/Slider.js"></script>
+    <script src="Javascript-Files/vanila-tilt.js"></script>
     <!-- End The Links Files -->
+
+    <!-- script normal  -->
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".image-product"), {
+                max: 25,
+                speed: 400
+            });
+        
+        </script>
+    <!-- script normal  -->
 </body>
 
 </html>
