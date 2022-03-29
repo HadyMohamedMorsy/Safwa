@@ -1,3 +1,4 @@
+// about safwa
 .about-safwa{
     .company{
         text-transform: uppercase;
@@ -31,6 +32,9 @@
             margin-left: 20px;
             margin-top: 20px;
             font-weight: bold;
+            li{
+                margin-bottom: 5px;
+            }
         }
         .section-right{
             position: relative;
@@ -64,7 +68,6 @@
                 font-family: sans-serif;
                 transition: all 0.4s;
                 span{
-                    content: "";
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
@@ -92,3 +95,473 @@
     }
 
 }
+// about safwa
+
+// clients
+.clients{
+    h2{
+        font-size: $header;
+        color: $orange;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .less-padding{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .content-image{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: #f8f8f8;
+                top: 0px;
+                right: 0px;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                transition: all 0.4s;
+            }
+            &:hover{
+                &::after{
+                    width: 0%;
+                }
+            }
+            img{
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+// clients
+
+// quote
+.contact{
+    .title{
+        font-size: $header;
+        color: $orange;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .contact-Company{
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        span{
+            margin-right: 10px;
+            font-size: 30px;
+            color: $orange;
+        }
+        .links-contact{
+            font-weight: bold;
+            font-size: 18px;
+            a{
+                color: $black;
+            }
+        }
+    }
+
+    .title-secound-contact{
+        font-size: $header;
+        margin-bottom: 10px;
+    }
+    .text-respose{
+        font-size: $smalltext;
+    }
+    form{
+        width: 100%;
+        .input-group{
+            margin: 20px 0px;
+            position: relative;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            .input{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+                border: none;
+                outline: none;
+            }
+            textarea{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+                border: none;
+                outline: none;
+                resize: none;
+            }
+            label{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                border-bottom: 1px solid $black;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0px;
+                    border-bottom: 3px solid $blue;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(-100%);
+                    transition: 0.4s;
+                }
+                .content-name{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0px;
+                    transition: 0.4s;
+                }
+
+
+            }
+        }
+        .submit{
+            background-color: $blue;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-weight: bold;
+            color: $white;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            span{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
+                font-size: 17px;
+                transition: 0.4s;
+                display: block;
+            }
+            &:hover{
+                background-color: $black;
+                span{
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+}
+// quote
+
+// map
+.map{
+    .title{
+        font-size: $header;
+        text-transform: uppercase;
+        color: $orange;
+        margin-bottom: 30px;
+    }
+    p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+// map
+
+// testemonials
+.testemonials{
+    .title{
+        font-size: $header;
+        text-transform: uppercase;
+        color: $orange;
+        position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+        overflow: hidden;
+        &::after{
+            display: none;
+            @media (min-width : 1024px) {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -25%;
+                background-color: $black;
+                z-index: -1;
+            }
+
+        }
+        &::before{
+            display: none;
+            @media (min-width : 1024px) {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -25%;
+                background-color: $black;
+                z-index: -1;
+            }
+        }
+    }
+    .details-testemonial{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: $orange;
+        color: $white;
+        text-align: center;
+        padding: 40px;
+        span{
+            font-size: 30px;
+        }
+        p{
+            font-weight: bold;
+        }
+
+    }
+
+    .person{
+        display: flex;
+        margin-bottom: 20px;
+        .person-image{
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .person-details{
+            h3{
+                font-weight: bold;
+                text-transform: uppercase;
+                .stars{
+                    color: $blue;
+                }
+            }
+            p{
+                color: #746f6f;
+            }
+        }
+    }
+    .icon-quotes-right{
+        color: $blue;
+    }
+    .center-flex{
+        span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-left: 10px;
+            cursor: pointer;
+            &.active{
+                background-color: $orange;
+            }
+        }
+    }
+
+}
+
+// testemonials
+
+// service 
+
+.services{
+    .title{
+        color: $orange;
+        font-weight: bold;
+        font-size: $header;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    .content-serve{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        color: $black;
+        &:hover{
+            &::after{
+                bottom: 0%;
+
+            }
+            color: $white;
+            p{
+                color: $white
+            }
+        }
+        img{
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3{
+            margin-top: 20px;
+        }
+        p{
+            text-align: center;
+            color: #625d5d;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: #eee;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            background-color: $blue;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: 0.4s;
+        }
+    }
+}
+// services
+
+// team 
+.team{
+    .content-header-team{
+        background-color: #f3f3f3;
+        padding: 20px 20px 100px 20px;
+        width: 100%;
+        .title{
+            font-weight: bold;
+            font-size: $header;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: $orange;
+        }
+        .link-team{
+            display: flex;
+            background-color: $blue;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-weight: bold;
+            width: 200px;
+            margin-left: auto;
+            position: relative;
+            transition: all 0.4s;
+            span{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                font-size: 17px;
+                transition: 0.4s;
+                display: block;
+            }
+            &:hover{
+                background-color: $black;
+                span{
+                    right: 5px;
+                }
+            }
+        }
+    }
+    .image-team{
+        width: 100%;
+        bottom: 1px solid #eee;
+        position: relative;
+        .details-person{
+            position: absolute;
+            bottom: -20px;
+            background-color: #fe5627;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            color: #fe5627;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+// team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// specicfic style
+.form .input-group > .input:focus ~ .label-name .content-name,
+.form .input-group > .input:valid ~ .label-name .content-name
+{
+    transform: translateY(-100%);
+    font-size: 16px;
+    color: $black;
+}
+
+.form .input-group > .input:focus ~ .label-name::after
+{
+    transform: translateX(0%);
+}
+// specicfic style

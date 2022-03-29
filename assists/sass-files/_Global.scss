@@ -32,10 +32,7 @@ $black : #000;
     padding: 0px;
     margin: 0px;
     @include prefix(box-sizing, border-box, webkit ms o);
-    font-family: 'Sorts Mill Goudy', serif;
-
-
-
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -131,5 +128,18 @@ li{
 .margin-between-section{
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.align-item-center{
+    @include prefix(align-items , center, webkit ms o);
+}
+
+.right{
+    text-align: right;
+}
+
+.no-margin{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
