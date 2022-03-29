@@ -342,6 +342,11 @@
 
 <!-- team -->
 <div class="team margin-between-section">
+    <div class="arrorws">
+        <span class="icon-arrow-left2"></span>
+        <span class="icon-arrow-right2"></span>
+
+    </div>
     <div class="container">
         <div class="row content-header-team align-item-center no-margin">
             <div class="col-6">
@@ -355,29 +360,52 @@
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
+        <div class="row slider">
 
+            <div class="col-4">
+                <div class="image-team">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <div class="details-person">
+                        <h2> Sara Ahmed </h2>
+                        <span> Engneering</span>
                     </div>
+                </div>
+                <div class="description-job">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="image-team">
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                     <div class="details-person">
-                        
+                        <h2> Sara Ahmed </h2>
+                        <span> Engneering</span>
                     </div>
                 </div>
+                <div class="description-job">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+
             </div>
             <div class="col-4">
                 <div class="image-team">
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                     <div class="details-person">
-                        
+                        <h2> Sara Ahmed </h2>
+                        <span> Engneering</span>
                     </div>
+                </div>
+                <div class="description-job">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                 </div>
             </div>
         </div>

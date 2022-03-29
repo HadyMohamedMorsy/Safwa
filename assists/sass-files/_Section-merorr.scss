@@ -462,6 +462,27 @@
 
 // team 
 .team{
+    position: relative;
+    .arrorws{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            font-size: 40px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
     .content-header-team{
         background-color: #f3f3f3;
         padding: 20px 20px 100px 20px;
@@ -502,26 +523,48 @@
             }
         }
     }
-    .image-team{
-        width: 100%;
-        bottom: 1px solid #eee;
-        position: relative;
-        .details-person{
-            position: absolute;
-            bottom: -20px;
-            background-color: #fe5627;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 30px;
-            color: #fe5627;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        img{
+        .image-team{
             width: 100%;
+            position: relative;
+            background-color: #eee;
+            @media (max-width : 1024px) {
+                margin-bottom: 50px;
+            }
+            .details-person{
+                position: absolute;
+                bottom: -20px;
+                background-color: #fe5627;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px 40px;
+                color: #fe5627;
+                left: 50%;
+                transform: translateX(-50%);
+                color: $white;
+                text-align: center;
+                h2{
+                    font-size: 18px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                span{
+                    font-size: $smalltext;
+                }
+            }
+            img{
+                width: 100%;
+    
+            }
         }
-    }
+        .description-job{
+            padding-top: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+
 }
 
 
