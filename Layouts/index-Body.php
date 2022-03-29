@@ -356,7 +356,6 @@
             </div>
         </div>
         <div class="row slider">
-
             <div class="col-4">
                 <div class="image-team">
                     <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
@@ -473,8 +472,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <span> Our Work </span>
-                <h2 class="title"> Recent Projects </h2>
+                <h2 class="title"> Our Work </h2>
             </div>
             <div class="col-6">
                 <div class="button-filter">
@@ -488,10 +486,119 @@
 
         </div>
         <div class="row">
-            
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
         </div>
     </div>
 </section>
-
 <!-- Our Work -->
+
+<!-- articls -->
+<article class="Blog margin-between-section">
+    <div class="container">
+        <div class="row specific-space">
+            <div class="col-6">
+                <h2 class="title">Latest Articles Updated Daily </h2>
+                <p class="description-text"> We Are Here To Learn You More From Blog.</p>
+            </div>
+            <div class="col-6">
+                <a href="#" class="link-team"> 
+                    More Details 
+                    <span class="icon-arrow-right2"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="image-blog">
+                    <a href="#">
+                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    </a>
+                    <div class="details-blog"> 
+                        <span> 12/14/2021</span>
+                        <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-blog">
+                    <a href="#">
+                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    </a>
+                    <div class="details-blog"> 
+                        <span> 12/14/2021</span>
+                        <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-blog">
+                    <a href="#">
+                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    </a>
+                    <div class="details-blog"> 
+                        <span> 12/14/2021</span>
+                        <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- articls -->
 

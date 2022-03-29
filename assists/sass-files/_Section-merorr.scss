@@ -594,6 +594,72 @@
 }
 // projects
 
+// Blog
+.Blog{
+    .title{
+        color: $orange;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .description-text{
+        font-size: $header;
+        color: $blue;
+        font-weight: bold;
+    }
+    .link-team{
+        display: flex;
+        background-color: $blue;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-weight: bold;
+        width: 200px;
+        margin-left: auto;
+        position: relative;
+        transition: all 0.4s;
+        span{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            font-size: 17px;
+            transition: 0.4s;
+            display: block;
+        }
+        &:hover{
+            background-color: $black;
+            span{
+                right: 5px;
+            }
+        }
+    }
+    .image-blog{
+        margin-bottom: 30px;
+        border: 2px solid #eee;
+        img{
+            width: 100%;
+
+        }
+        .details-blog{
+            padding: 15px;
+            span{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 30px;
+                color: $orange;
+            }
+            .title-blog{
+                margin-bottom: 20px;
+                color: $blue;
+            }
+        }
+    }
+}
+
+// blog
+
 
 
 
