@@ -554,9 +554,14 @@
         <div class="row">
             <div class="col-4">
                 <div class="image-blog">
-                    <a href="#">
-                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    </a>
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                        </a>
+                        <div class="Catagory">
+                            Bussniss
+                        </div>
+                    </div>
                     <div class="details-blog"> 
                         <span> 12/14/2021</span>
                         <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
@@ -564,14 +569,20 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                         </p>
+                        <a href="#"> Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="image-blog">
-                    <a href="#">
-                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    </a>
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                        </a>
+                        <div class="Catagory">
+                            Matarials
+                        </div>
+                    </div>
                     <div class="details-blog"> 
                         <span> 12/14/2021</span>
                         <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
@@ -579,14 +590,20 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                         </p>
+                        <a href="#"> Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="image-blog">
-                    <a href="#">
-                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    </a>
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                        </a>
+                        <div class="Catagory">
+                            Investment
+                        </div>
+                    </div>
                     <div class="details-blog"> 
                         <span> 12/14/2021</span>
                         <h2 class="title-blog"> Present You With Examples Of Three Posts </h2>
@@ -594,6 +611,7 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.
                         </p>
+                        <a href="#"> Read More</a>
                     </div>
                 </div>
             </div>
@@ -601,4 +619,99 @@
     </div>
 </article>
 <!-- articls -->
+
+<!-- Events -->
+<div class="events margin-between-section">
+    <div class="row center-flex">
+        <h2 class="title"> events </h2>
+    </div>
+    <div class="cover-events">
+        <div class="cover">
+            <img src="assists/images/bg-map2.png" alt="">
+        </div>
+        <div class="container contents-event">
+            <div class="row center-flex">
+                <div class="col-4">
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pic3-4.jpg" alt="">
+                        </a>
+                        <a href="#" class="content-details">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
+                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
+                            </p>
+                        </a>
+                    </div>
+                    <div class="details">
+                        <span> 12/4/2021</span>
+                        <h2> Test Title </h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pic3-4.jpg" alt="">
+                        </a>
+                        <a href="#" class="content-details">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
+                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
+                            </p>
+                        </a>
+                    </div>
+                    <div class="details">
+                        <span> 12/4/2021</span>
+                        <h2> Test Title </h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="content-image">
+                        <a href="#">
+                            <img src="assists/images/pic3-4.jpg" alt="">
+                        </a>
+                        <a href="#" class="content-details">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
+                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
+                            </p>
+                        </a>
+                    </div>
+                    <div class="details">
+                        <span> 12/4/2021</span>
+                        <h2> Test Title </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Events -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="logo">
+                    <img src="assists/images/Al-Safwa-Logo-WHITE.png" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a magni officia ratione vel.
+                </p>
+                <div class="social-media">
+
+                </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+</footer>
+
+
 
