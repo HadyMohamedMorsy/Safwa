@@ -16,10 +16,10 @@
     <!-- Start The meta -->
     <?php include ("Links CSS In Head Area.php"); ?>
     <!-- End The meta -->
-    <title>  About Us  </title>
+    <title>  Contact  </title>
 
     <!-- Start The Links Files -->
-    <link rel="stylesheet" href="assists/About/about.css">
+    <link rel="stylesheet" href="assists/Contact/contact.css">
     <!-- End The Links Files -->
 
 </head>
@@ -30,7 +30,7 @@
     <?php include ("Layouts/header-pages.php"); ?>
     <!-- End The Header-->
 
-    <?php include ("Layouts/About-body.php"); ?>
+    <?php include ("Layouts/contact-body.php"); ?>
 
     <!-- Start The Footer -->
     <?php  include ("Layouts/Footer.php"); ?>
@@ -39,8 +39,19 @@
     <!-- Start The Links Files -->
     <script src="Javascript-Files/demo.js"></script>
     <script src="Javascript-Files/menu.js"></script>
+    <script src="Javascript-Files/Slider.js"></script>
+    <script src="Javascript-Files/vanila-tilt.js"></script>
     <!-- End The Links Files -->
 
+    <!-- script normal  -->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".image-product"), {
+            max: 25,
+            speed: 400
+        });
+    
+    </script>
+    <!-- script normal  -->
 </body>
 
 </html>

@@ -27,7 +27,7 @@
 <body>
 
     <!-- Start The Header -->
-    <?php include ("Layouts/Header-pages.php"); ?>
+    <?php include ("Layouts/Header.php"); ?>
     <!-- End The Header-->
 
     <?php include ("Layouts/index-Body.php"); ?>
@@ -44,13 +44,13 @@
     <!-- End The Links Files -->
 
     <!-- script normal  -->
-        <script type="text/javascript">
-            VanillaTilt.init(document.querySelectorAll(".image-product"), {
-                max: 25,
-                speed: 400
-            });
-        
-        </script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".image-product"), {
+            max: 25,
+            speed: 400
+        });
+    
+    </script>
     <!-- script normal  -->
 </body>
 

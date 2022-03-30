@@ -1,98 +1,42 @@
 <!-- about cover -->
 <div class="cover-global">
-    <h2 class="title"> About Us </h2>
+    <h2 class="title"> Services</h2>
 </div>
 <!-- about cover -->
 
-<!-- about Safwa  -->
-<section class="about-safwa margin-between-section">
+<!-- services -->
+<section class="services margin-between-section">
     <div class="container">
         <div class="row center-flex">
-            <h1 class="company"> Al-Safwa </h1>
-            <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut vitae debitis qui incidunt quasi quae repellat laudantium ducimus, natus quos. Debitis labore quam impedit ea mollitia, quas dolorum omnis.</p>
+            <h2 class="title"> Our Services </h2>
         </div>
-        <div class="row section-parent-us">
-            <div class="col-5">
-                <h2> Dream Big </h2>
-                <h2 class="last-line"> Inspire The Word</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos fuga cupiditate doloremque nemo similique maiores eius eos sint labore, hic possimus nobis accusantium quaerat architecto numquam excepturi earum nesciunt.</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-            </div>
-            <div class="col-7">
-                <div class="section-right">
-                    <div class="row">
-                        <div class="col-7">
-                            <h2>Let's Grow <span> Together</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium error consectetur adipisicing elit.</p>
-                            <a href="#"> 
-                                Call Us
-                                <span class="icon-arrow-right2"></span>
-                            </a>
-                        </div>
-                        <div class="col-5">
-                            <img src="assists/images/8104.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- about Safwa  -->
-<!-- new section  -->
-<section class="new-section margin-between-section">
-    <div class="container">
         <div class="row">
-            <div class="col-6">
-                <img src="assists/images/DSC_0612-scaled.jpg" alt="">
-            </div>
-            <div class="col-6">
-                <h2 class="title"> About Al Safwa </h2>
-                <p class="brief">
-                    Al-Safwa Industry is a manufacturing company that was established in 2003. Since the very first day we have devoted ourselves to the field of metal works only to be one of the very few best at it. Given the list of our clients and their value in all their different fields and markets, Al-Safwa industry has proven to be a leading factory in the field of professional metal works.
-                </p>
-                <p class="brief">
-                    Fifteen years of commitment meant fifteen years of experience in all kinds of professional metal works. We specialize in storage solutions; starting from warehouse racking and warehouse mezzanine, going through lockers and display stands, down to the last piece of handling equipment a factory or warehouse might need.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- new section -->
-
-<!-- mission -->
-<section class="mission">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 no-padding center-content">
-                <div class="mission-content">
-                    <h2 class="title"> Our Mission</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque incidunt, doloribus tempora optio iusto voluptatem nemo iste hic! Inventore quidem consectetur perspiciatis quo ipsam unde quibusdam, esse qui reiciendis minus.</p>
+            <div class="col-4">
+                <div class="content-serve">
+                    <img src="assists/images/light-bulb.png" alt="">
+                    <h3> Web Analysis </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
                 </div>
             </div>
-            <div class="col-6 no-padding center-content">
-                <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+            <div class="col-4">
+                <div class="content-serve">
+                    <img src="assists/images/acquisition.png" alt="">
+                    <h3> Web Analysis </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
+
+                </div>
             </div>
-            <div class="col-6 no-padding center-content">
-                <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-            </div>
-            <div class="col-6 no-padding center-content">
-                <div class="mission-content">
-                    <h2 class="title"> Our Mission</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque incidunt, doloribus tempora optio iusto voluptatem nemo iste hic! Inventore quidem consectetur perspiciatis quo ipsam unde quibusdam, esse qui reiciendis minus.</p>
+            <div class="col-4">
+                <div class="content-serve">
+                    <img src="assists/images/statistics.png" alt="">
+                    <h3> Web Analysis </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
-
-<!-- mission -->
+<!-- services -->
 
 <!-- team -->
 <section class="team margin-between-section">
@@ -161,6 +105,74 @@
 </section>
 <!-- team -->
 
+<!-- Our Work -->
+<section class="work margin-between-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="title"> Our Work </h2>
+            </div>
+            <div class="col-6">
+                <div class="button-filter">
+                    <span class="active"> All </span>
+                    <span> Factory </span>
+                    <span> Industory </span>
+                    <span>Materials </span>
+                    <span>Mechanicals </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="content-work">
+                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
+                </div>            
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Work -->
 
 <!-- Testemonials -->
 <section class="testemonials margin-between-section">
@@ -224,7 +236,7 @@
 </section>
 <!-- Testemonials -->
 
-
+<!-- footer -->
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -303,3 +315,5 @@
         </div>
     </div>
 </div>
+
+<!-- footer -->

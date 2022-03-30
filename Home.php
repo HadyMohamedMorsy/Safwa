@@ -16,6 +16,8 @@
     <!-- Start The meta -->
     <?php include ("Links CSS In Head Area.php"); ?>
     <!-- End The meta -->
+
+    <link rel="stylesheet" href="assists/Home/Home.css">
     <title>  Home </title>
 
     <!-- start The Links Files -->
@@ -36,7 +38,8 @@
     <!-- End The Footer-->
 
     <!-- Start The Links Files -->
-
+    <script src="Javascript-Files/demo.js"></script>
+    <script src="Javascript-Files/menu.js"></script>
     <!-- End The Links Files -->
 </body>
 

@@ -10,7 +10,7 @@
                 <div class="row">
                     <ul class="parent-list">
                         <li> 
-                            <a href="#">
+                            <a href="index.php">
                                 Home
                             </a>
                         </li>
@@ -20,7 +20,7 @@
                             </a>
                         </li>
                         <li> 
-                            <a href="#">
+                            <a href="services.php">
                                 Services
                             </a>
                         </li>
@@ -40,7 +40,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="contact.php">
                                 Contact Us
                             </a>
                         </li>
