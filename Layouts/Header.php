@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="Products.php">
                                 Products
                             </a>
                         </li>
@@ -34,9 +34,9 @@
                                 Mediahub
                             </a>
                             <ul>
-                                <li>  <a href="#"> Blogs</a> </li>
-                                <li>  <a href="#"> Events</a> </li>
-                                <li>  <a href="#"> News</a> </li>
+                            <li>  <a href="Blogs.php"> Blogs</a> </li>
+                            <li>  <a href="Events.php"> Events</a> </li>
+                            <li>  <a href="News.php"> News</a> </li>
                             </ul>
                         </li>
                         <li>
@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <a href="#" class="get-Quote">
+        <a href="contact.php" class="get-Quote">
             <div class="content-shape">
                 <span> Get </span>  
                 <span> Quite </span>

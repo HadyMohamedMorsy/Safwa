@@ -1,109 +1,68 @@
 <!-- about cover -->
 <div class="cover-global">
-    <h2 class="title"> Services</h2>
+    <h2 class="title"> Products  </h2>
 </div>
 <!-- about cover -->
 
-<!-- services -->
-<section class="services margin-between-section">
+<!-- products -->
+<section class="products margin-between-section">
     <div class="container">
-        <div class="row center-flex">
-            <h2 class="title"> Our Services </h2>
+        <div class="row">
+            <h2 class="title"> Our <span> Products</span> </h2>
         </div>
         <div class="row">
             <div class="col-4">
-                <div class="content-serve">
-                    <img src="assists/images/light-bulb.png" alt="">
-                    <h3> Web Analysis </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Sheveling </h2>
+                    </a>
                 </div>
             </div>
             <div class="col-4">
-                <div class="content-serve">
-                    <img src="assists/images/acquisition.png" alt="">
-                    <h3> Web Analysis </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
-
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Pallet Racking</h2>
+                    </a>
                 </div>
             </div>
             <div class="col-4">
-                <div class="content-serve">
-                    <img src="assists/images/statistics.png" alt="">
-                    <h3> Web Analysis </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam tempora exercitationem perferendis non minima modi dolores, ducimus consequuntur ea temporibus. Quae assumenda dolor ipsa ducimus exercitationem! Error excepturi nemo pariatur.</p>
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Mezzanine </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Handling Equipment </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Lockers and Cabinets </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="image-product">
+                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <a href="#" class="content-title-project">
+                        <h2> Sheveling </h2>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- services -->
-
-<!-- team -->
-<section class="team margin-between-section">
-    <div class="container">
-        <div class="row content-header-team align-item-center no-margin">
-            <div class="col-6">
-                <h2 class="title"> Our Teams </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, officiis tenetur! Distinctio provident placeat omnis similique ea? Autem quibusdam sunt quidem totam! Error ex recusandae ea quae quia odit laborum?</p>
-            </div>
-            <div class="col-6">
-                <a class="link-team" href="#">
-                    Join Our Team  
-                    <span class="icon-arrow-right2"></span>
-                </a>
-            </div>
-        </div>
-        <div class="row slider">
-            <div class="col-4">
-                <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
-                    </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
-                    </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                </div>
-
-            </div>
-            <div class="col-4">
-                <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
-                    </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- team -->
+<!-- products -->
 
 <!-- Our Work -->
 <section class="work margin-between-section">
@@ -235,3 +194,73 @@
     </div>
 </section>
 <!-- Testemonials -->
+
+<!-- Contact Us  -->
+<section class="contact margin-between-section">
+
+    <div class="container">
+        <div class="row">
+            <h2 class="title"> Conatct Us </h2>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="contact-Company">
+                    <span class="icon-phone"></span>
+                    <div>
+                        <h4> Call Us </h4>
+                        <p class="links-contact"> <a href="#"> 01012315216 </a> , <a  href="#"> 01134216512 </a> </p>
+                    </div>
+                </div>
+                <div class="contact-Company">
+                    <span class="icon-mail4"></span>
+                    <div>
+                        <h4> Email Us  </h4>
+                        <p class="links-contact"> <a  href="#"> Hady812012@gmail.com </a> </p>
+                    </div>
+                </div>
+                <div class="contact-Company">
+                    <span class="icon-location2"></span>
+                    <div>
+                        <h4> Location  </h4>
+                        <p class="links-contact"> Egypt , Cairo city , shekh zaied </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2 class="title-secound-contact"> Welcome To Al-Safwa </h2>
+                <p class="text-respose"> Send Your Message And We will Response Before 24 Houres </p>
+                <form class="form">
+                    <div class="input-group">
+                        <input type="text" class="input" require id="name"/>
+                        <label for="name" class="label-name">
+                            <span class="content-name"> Name </span>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="input" require id="number"/>
+                        <label for="number" class="label-name">
+                            <span class="content-name"> Number </span>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" class="input" require id="email"/>
+                        <label for="email" class="label-name">
+                            <span class="content-name"> Email </span>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="input"> </textarea>
+                        <label for="Message" class="label-name">
+                            <span class="content-name"> Message </span>
+                        </label>
+                    </div>
+                    <button class="submit"> 
+                        sent Message 
+                        <span class="icon-arrow-right2"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Us  -->
