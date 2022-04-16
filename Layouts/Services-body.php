@@ -1,8 +1,25 @@
-<!-- about cover -->
-<div class="cover-global">
-    <h2 class="title"> Services</h2>
+<!-- content-header -->
+<div class="content-header">
+<div class="container padding-section">
+    <div class="row">
+            <div class="col-6">
+                <div class="content-header-details">
+                    <span> Alsafwa  </span>
+                    <h1 class="font-header"> We build ideas driven by  <span class="color-main"> the future .</span></h1>
+                    <p> Dramatically grow customized potentialities vis-a-vis synergistic alignments. Energistically drive team whereas.</p>
+                </div>
+                <button class="btn"> Contact Us </button>
+            </div>
+            <div class="col-6">
+                <div class="images">
+                    <img src="assists/images/undraw_services_re_hu5n.svg" alt="">
+                </div>
+            </div>
+    </div>
 </div>
-<!-- about cover -->
+</div>
+
+<!-- content-header -->
 
 <!-- services -->
 <section class="services margin-between-section">
@@ -41,63 +58,42 @@
 <!-- team -->
 <section class="team margin-between-section">
     <div class="container">
-        <div class="row content-header-team align-item-center no-margin">
-            <div class="col-6">
+        <div class="Content-header-team">
                 <h2 class="title"> Our Teams </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, officiis tenetur! Distinctio provident placeat omnis similique ea? Autem quibusdam sunt quidem totam! Error ex recusandae ea quae quia odit laborum?</p>
-            </div>
-            <div class="col-6">
-                <a class="link-team" href="#">
-                    Join Our Team  
-                    <span class="icon-arrow-right2"></span>
-                </a>
-            </div>
         </div>
         <div class="row slider">
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                </div>
-
             </div>
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
                 </div>
             </div>
         </div>
@@ -177,61 +173,76 @@
 <!-- Testemonials -->
 <section class="testemonials margin-between-section">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="title"> What Our Clients Are Saying </h2>
-            </div>
+        <div class="content-header-testemonials center">
+            <h2>What Clients Say About Us </h2>
+            <p> Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business innovate compelling internal.</p>
         </div>
         <div class="row">
-            <div class="col-3">
-                <div class="details-testemonial">
-                    <span class="icon-stack"></span>
-                    <h2> 2989 + </h2>
-                    <p> Customer SatisFaction</p>
-                </div>
-            </div>
-            <div class="col-9 dynamic-perosnality">
-                <div class="row align-item-center">
+            <div class="col-12">
+                <div class="row">
                     <div class="col-6">
-                        <div class="person">
-                            <div class="person-image">
-                                <img src="assists/images/IMG-Defult-Male.jpg" alt="">
-                            </div>
-                            <div class="person-details">
-                                <h3 class="name-person"> 
-                                    Hady Mohamed 
-                                    <span class="stars">
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                    </span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <div class="content-box">
+                            <span class="icon-quotes-right"></span>
+                            <blockquote class="blockquote">
+                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                            </blockquote>
+                            <div class="row center-betwen">
+                                <div class="details-person">
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 right">
-                        <span class="icon-quotes-right"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nam? Maiores veritatis, 
-                            atque quas tempore exercitationem, delectus voluptates aperiam eum corporis beatae 
-                            accusamus unde quisquam eveniet pariatur debitis repellat laboriosam.
-                        </p>
+                    <div class="col-6">
+                        <div class="content-box">
+                            <span class="icon-quotes-right"></span>
+                            <blockquote class="blockquote">
+                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                            </blockquote>
+                            <div class="row center-betwen">
+                                <div class="details-person">
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row center-flex">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
     </div>
 </section>
 <!-- Testemonials -->
+
+<!-- Contact-sub -->
+<div class="subcontact">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h2>Consulting Agency for Your Business</h2>
+                <p> Rapidiously engage fully tested e-commerce with progressive architectures. </p>
+            </div>
+            <div class="col-4">
+                <div class="btn-conent">
+                    <a href="#" class="btn"> Contact With Us </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact-sub -->

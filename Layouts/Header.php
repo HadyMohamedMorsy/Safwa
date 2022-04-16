@@ -49,12 +49,12 @@
                     <div class="col-8">
                         <nav>
                             <ul class="nav__links">
-                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="index.php" class="active">Home</a></li>
                                 <li><a href="About.php">About Us </a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Products</a></li>
+                                <li><a href="Services.php">Services</a></li>
+                                <li><a href="Products.php">Products</a></li>
                                 <li><a href="#">Mediahub</a></li>
-                                <li><a href="#">Contact Us </a></li>
+                                <li><a href="contact.php">Contact Us </a></li>
                             </ul>
                         </nav>
                     </div>

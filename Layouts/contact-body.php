@@ -74,3 +74,9 @@
     </div>
 </section>
 <!-- Contact Us  -->
+
+<!-- map -->
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110512.09221673098!2d31.41969680786132!3d30.051116632520365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583ffe2924d7f9%3A0x1bfe4412dce53e87!2z2KfZhNiz2LHYp9isINmF2YjZhA!5e0!3m2!1sar!2seg!4v1650133018454!5m2!1sar!2seg" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!-- map -->
