@@ -71,33 +71,64 @@
 // wave
 
 .new-section{
-    .title{
-        color: $orange;
-        font-weight: bold;
-        font-size: $header;
-        margin-bottom: 50px;
-        text-transform: uppercase;
+    .section-parent-us{
+        margin-top: 50px;
+        padding: 30px 0px;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: $header;
+            font-weight: 400;
+        }
+        .last-line{
+            font-size: $header;
+            font-weight: bold;
+            color: $orange;
+        }
+        ul{
+            li{
+                margin: 20px 0px;
+                color: #707070;
+            }
+        }
+        a{
+            color: $white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+    .content-image{
         position: relative;
-        &::after{
-            content: "";
+        .svg{
             position: absolute;
-            bottom: -20px;
-            background-color: $orange;
-            height: 4px;
-            width: 100px;
-            left: 0px;
+            top: -5px;
+            z-index: -1;
+            left: -10px;
+            img{
+                width: 100%;
+            }
+        }
+        .target-image{
+            img{
+                width: 100%;
+                border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+                border: 20px solid #1A2C79;
+            }
+
+        }
+        .dot-image{
+            position: absolute;
+            bottom: -3px;
+            left: auto;
+            right: -3px;
+            z-index: -1;
+            img{
+                width: 100%;
+            }
 
         }
     }
-    .brief{
-        text-align: justify;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
-    img{
-        width: 100%;
-        object-fit: cover;
-    }
+
 }
 
 // mission
