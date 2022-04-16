@@ -1,41 +1,53 @@
-<!-- about cover -->
-<div class="cover-global">
-    <h2 class="title"> About Us </h2>
+<!-- wave -->
+
+<div class="wave">
+    
 </div>
-<!-- about cover -->
+
+<!-- wave -->
+
 
 <!-- about Safwa  -->
 <section class="about-safwa margin-between-section">
     <div class="container">
-        <div class="row center-flex">
-            <h1 class="company"> Al-Safwa </h1>
-            <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut vitae debitis qui incidunt quasi quae repellat laudantium ducimus, natus quos. Debitis labore quam impedit ea mollitia, quas dolorum omnis.</p>
-        </div>
         <div class="row section-parent-us">
             <div class="col-5">
-                <h2> Dream Big </h2>
-                <h2 class="last-line"> Inspire The Word</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos fuga cupiditate doloremque nemo similique maiores eius eos sint labore, hic possimus nobis accusantium quaerat architecto numquam excepturi earum nesciunt.</p>
+                <h2> World Class Service Growth Your Business</h2>
+                <p class="lead">Convert your emails into tickets and keep them all organized in one place. Never leave customers' questions unanswered.</p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Websites</strong>  Design</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Accounting</strong>  Procedures Guidebook.</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Cost </strong>  Accounting Fundamentals</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> SEO</strong>  Optimization Services</li>
                 </ul>
+                <a href="#" class="btn"> View More </a>
             </div>
             <div class="col-7">
                 <div class="section-right">
                     <div class="row">
-                        <div class="col-7">
-                            <h2>Let's Grow <span> Together</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium error consectetur adipisicing elit.</p>
-                            <a href="#"> 
-                                Call Us
-                                <span class="icon-arrow-right2"></span>
-                            </a>
+                        <div class="col-6 ">
+                            <div class="content-box  bg-default">
+                                <span class="icon-shield"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
+                            <div class="content-box bg-secondary">
+                                <span class="icon-fire"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <img src="assists/images/8104.png" alt="">
+                        <div class="col-6 section-padding">
+                            <div class="content-box bg-success">
+                                <span class="icon-lightbulb"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
+                            <div class="content-box bg-primary">
+                                <span class="icon-fa"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,6 +56,7 @@
     </div>
 </section>
 <!-- about Safwa  -->
+
 <!-- new section  -->
 <section class="new-section margin-between-section">
     <div class="container">

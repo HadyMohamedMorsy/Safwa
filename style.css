@@ -91,3 +91,27 @@
 .icon-stars:before {
   content: "\e903";
 }
+.icon-radio-checked:before {
+  content: "\ea54";
+}
+.icon-fa:before {
+  content: "\e905";
+}
+.icon-lightbulb:before {
+  content: "\e904";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-shield:before {
+  content: "\e9b4";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-user-plus:before {
+  content: "\e973";
+}

@@ -1,51 +1,99 @@
-// number
-.number-server{
-    background: url('../images/bg-2.jpg');
-    width: 100%;
-    height: 1000px;
-    @media (min-width : 1024px) {
-        height: 600px;
-    }
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.header-section{
     position: relative;
-    .overlay{
-        background-color: rgba(#000,0.7);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .content-on-section{
+    background: url('../../assists/images/banner-3.jpg') no-repeat center center / cover;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    .content-header-section{
         position: absolute;
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50% , -50%);
-        width: 100%;
-        .title-serve{
-            background-color: rgba($orange,0.6);
-            padding: 15px;
+        z-index: 2;
+        h2{
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.3;
             color: $white;
-            text-align: center;
-            font-size: $header;
-            padding: 30px 80px;
-            
         }
-        .content-Details{
-            padding: 15px;
-            p{
-                font-size: 50px;
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 15px 0px;
+            color: $white;
+        }
+        ul{
+            li{
+                padding: 10px 0px;
                 color: $white;
             }
+        }
+        a{
+            margin-top: 20px;
+            color: $white;
+            background-color: $orange;
+        }
+
+    }
+    
+    &::before{
+    content: "";
+    background: linear-gradient(to right, #1A2C79 30%, rgba(26, 44, 121, 0.18) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+        
+    }
+}
+
+.number-server{
+    background-image: url('../../assists/images/bg-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+
+    .content-on-section{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        width: 100%;
+        z-index: 2;
+        .content-Details{
+            color: $white;
             span{
-                color: $orange;
-                font-size: 18px;
-                font-weight: bold;
+                &:first-child{
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                    display: block;
+                    color: $white;
+                }
+                color: rgba(255,255,255,.7);
+            }
+            p{
+                font-size: 40px;
             }
         }
     }
-}
-// number
 
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($blue , 0.8);
+        z-index: 1;
+    }
+}

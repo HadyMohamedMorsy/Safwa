@@ -1,139 +1,75 @@
-
-<header>
-    <!-- pop Menu  -->
-        <div class="menu">
-            <div class="burger-menu">
-                <span class="link-1"></span>
-                <span class="link-2"></span>
-            </div>
+        <div class="subnavbar">
             <div class="container">
                 <div class="row">
-                    <ul class="parent-list">
-                        <li> 
-                            <a href="index.php">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="About.php">
-                                About Us
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="services.php">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Products.php">
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Mediahub
-                            </a>
-                            <ul>
-                            <li>  <a href="Blogs.php"> Blogs</a> </li>
-                            <li>  <a href="Events.php"> Events</a> </li>
-                            <li>  <a href="News.php"> News</a> </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="contact.php">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    <!-- pop Menu  -->
-    <nav class="nav">
-        <div class="container header">
-            <div class="counter-linke">
-                <ul class="nav-links">
-                    <li>
-                        <a href="?Lang=EN"><img src="assists/images/britch.jpg" alt=""/> <span> EN </span> </a>
-                    </li>
-                    <li>
-                        <a href="?Lang=AR"> <img src="assists/images/egypt.png" alt=""/> <span> AR </span> </a>
-                    </li>
-                    <li>
-                        <a href="?Lang=FR"> <img src="assists/images/French.png" alt=""/> <span> FR </span> </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="logo"> 
-                <img src="assists/images/LogoSafwa.png" alt=""> 
-            </div>
-            <div class="burger">
-                <span class="link-1"></span>
-                <span class="link-2"></span>
-                <span class="link-3"></span>
-            </div>
-        </div>
-
-        <a href="contact.php" class="get-Quote">
-            <div class="content-shape">
-                <span> Get </span>  
-                <span> Quite </span>
-            </div>
-        </a>
-    </nav>
-    <div class="header-cover">
-        <div class="image" data-src="" data-alt="">
-            <div class="image-content"> 
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <img src="assists/images/pexels-pixabay-236698.jpg" alt="">
-                    <img src="assists/images/pexels-movidagrafica-barcelona-1474993.jpg" alt="">
-                    <img src="assists/images/pexels-pixabay-247763.jpg" alt="">
-                    <div class="content-image">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="content-image-content Translating">
-                                        <h3> Quality To Us Belongs </h3>
-                                        <p> 
-                                            Smal discription about smal discription about smal discription
-                                            about smal discription about smal discription about smal
-                                            discription about smal discription about smal discription about
-                                            smal discription about smal discription about
-                                        </p>
-                                    </div>
-                                    <div class="content-image-content Translating">
-                                        <h3> Quality</h3>
-                                        <p> 
-                                            Smal discription about smal discription about smal discription
-                                            about smal discription about smal discription about smal
-                                            discription about smal discription about smal discription about
-                                            smal discription about smal discription about
-                                        </p>
-                                    </div>
-                                    <div class="content-image-content Translating">
-                                        <h3> Belongs </h3>
-                                        <p> 
-                                            Smal discription about smal discription about smal discription
-                                            about smal discription about smal discription about smal
-                                            discription about smal discription about smal discription about
-                                            smal discription about smal discription about
-                                        </p>
-                                    </div>
-                                    <div class="content-image-content Translating">
-                                        <h3> Fivith Local </h3>
-                                        <p> 
-                                            Smal discription about smal discription about smal discription
-                                            about smal discription about smal discription about smal
-                                            discription about smal discription about smal discription about
-                                            smal discription about smal discription about
-                                        </p>
-                                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="content-details">
+                                    <span class="icon-mail4"></span>
+                                    <span> <a href="#">  support@email.com  </a></span>
                                 </div>
-                                <div class="col-6"></div>
+
+                            </div>
+                            <div class="col-4">
+                                <div class="content-details">
+                                    <span class="icon-phone"></span>
+                                    <span> <a href="#">   800 567.890.576   </a></span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="social-media">
+                                    <a href="#"> <span class="icon-facebook"></span> </a>
+                                    <a href="#"> <span class="icon-youtube"></span> </a>
+                                    <a href="#"> <span class="icon-linkedin2"></span> </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="content-Language">
+                                    <span> EN </span>
+                                    <img src="assists/images/britch.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+        
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="logo" href="/"><img src="assists/images/LogoSafwa.png" alt="logo"></a>
+                    </div>
+                    <div class="col-8">
+                        <nav>
+                            <ul class="nav__links">
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="About.php">About Us </a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Mediahub</a></li>
+                                <li><a href="#">Contact Us </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
+            </div>
+                        <!-- <a class="cta" href="#">Contact</a>
+                        <p class="menu cta">Menu</p> -->
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </div>

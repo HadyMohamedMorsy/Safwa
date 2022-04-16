@@ -1,35 +1,44 @@
 <!-- about Safwa  -->
 <section class="about-safwa margin-between-section">
     <div class="container">
-        <div class="row center-flex">
-            <h1 class="company"> Al-Safwa </h1>
-            <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut vitae debitis qui incidunt quasi quae repellat laudantium ducimus, natus quos. Debitis labore quam impedit ea mollitia, quas dolorum omnis.</p>
-        </div>
         <div class="row section-parent-us">
             <div class="col-5">
-                <h2> Dream Big </h2>
-                <h2 class="last-line"> Inspire The Word</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos fuga cupiditate doloremque nemo similique maiores eius eos sint labore, hic possimus nobis accusantium quaerat architecto numquam excepturi earum nesciunt.</p>
+                <h2> World Class Service Growth Your Business</h2>
+                <p class="lead">Convert your emails into tickets and keep them all organized in one place. Never leave customers' questions unanswered.</p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Websites</strong>  Design</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Accounting</strong>  Procedures Guidebook.</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> Cost </strong>  Accounting Fundamentals</li>
+                    <li> <span class="icon-radio-checked"></span> <strong> SEO</strong>  Optimization Services</li>
                 </ul>
+                <a href="#" class="btn"> View More </a>
             </div>
             <div class="col-7">
                 <div class="section-right">
                     <div class="row">
-                        <div class="col-7">
-                            <h2>Let's Grow <span> Together</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium error consectetur adipisicing elit.</p>
-                            <a href="#"> 
-                                Call Us
-                                <span class="icon-arrow-right2"></span>
-                            </a>
+                        <div class="col-6 ">
+                            <div class="content-box  bg-default">
+                                <span class="icon-shield"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
+                            <div class="content-box bg-secondary">
+                                <span class="icon-fire"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
                         </div>
-                        <div class="col-5">
-                            <img src="assists/images/8104.png" alt="">
+                        <div class="col-6 section-padding">
+                            <div class="content-box bg-success">
+                                <span class="icon-lightbulb"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
+                            <div class="content-box bg-primary">
+                                <span class="icon-fa"></span>
+                                <h5> Service to sales </h5>
+                                <p> Progressively brand clicks-and-mortar. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,38 +50,37 @@
 
 <!-- number section -->
 <section class="number-server margin-between-section">
-    <div class="overlay"></div>
     <div class="content-on-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <div class="title-serve">
-                        <h2> We Serve To Meet</h2>
-                        <span> Your Industorial Needs </span>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="content-Details">
-                                <p> 25 </p>
-                                <span> Produts </span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="content-Details">
-                                <p> 2000 </p>
-                                <span> Happy Clients </span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="content-Details">
-                                <p> 9 </p>
-                                <span> Years Of Experince </span>
-                            </div>
+                    <div class="col-3 center">
+                        <div class="content-Details">
+                            <span class="icon-headphones"></span>
+                            <p> 25 </p>
+                            <span> Produts </span>
                         </div>
                     </div>
-                </div>
+                    <div class="col-3 center">
+                        <div class="content-Details">
+                            <span class="icon-folder-open"></span>
+                            <p> 150 </p>
+                            <span> Happy Clients </span>
+                        </div>
+                    </div>
+                    <div class="col-3 center">
+                        <div class="content-Details">
+                            <span class="icon-user-plus"></span>
+                            <p> 100 </p>
+                            <span> Years Of Experince </span>
+                        </div>
+                    </div>
+                    <div class="col-3 center">
+                        <div class="content-Details">
+                            <span class="icon-user-plus"></span>
+                            <p> 100 </p>
+                            <span> Years Of Experince </span>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -247,60 +255,57 @@
 <!-- Testemonials -->
 <section class="testemonials margin-between-section">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="title"> What Our Clients Are Saying </h2>
-            </div>
+        <div class="content-header-testemonials center">
+            <h2>What Clients Say About Us </h2>
+            <p> Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business innovate compelling internal.</p>
         </div>
         <div class="row">
-            <div class="col-3">
-                <div class="details-testemonial">
-                    <span class="icon-stack"></span>
-                    <h2> 2989 + </h2>
-                    <p> Customer SatisFaction</p>
-                </div>
-            </div>
-            <div class="col-9 dynamic-perosnality">
-                <div class="row align-item-center">
+            <div class="col-12">
+                <div class="row">
                     <div class="col-6">
-                        <div class="person">
-                            <div class="person-image">
-                                <img src="assists/images/IMG-Defult-Male.jpg" alt="">
-                            </div>
-                            <div class="person-details">
-                                <h3 class="name-person"> 
-                                    Hady Mohamed 
-                                    <span class="stars">
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                        <span class="icon-stars"></span>
-                                    </span>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <div class="content-box">
+                            <span class="icon-quotes-right"></span>
+                            <blockquote class="blockquote">
+                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                            </blockquote>
+                            <div class="row center-betwen">
+                                <div class="details-person">
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 right">
-                        <span class="icon-quotes-right"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nam? Maiores veritatis, 
-                            atque quas tempore exercitationem, delectus voluptates aperiam eum corporis beatae 
-                            accusamus unde quisquam eveniet pariatur debitis repellat laboriosam.
-                        </p>
+                    <div class="col-6">
+                        <div class="content-box">
+                            <span class="icon-quotes-right"></span>
+                            <blockquote class="blockquote">
+                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                            </blockquote>
+                            <div class="row center-betwen">
+                                <div class="details-person">
+                                    <img src="" alt="" />
+                                </div>
+                                <div>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                    <span class="icon-stars"></span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row center-flex">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
     </div>
 </section>
@@ -343,63 +348,42 @@
 <!-- team -->
 <section class="team margin-between-section">
     <div class="container">
-        <div class="row content-header-team align-item-center no-margin">
-            <div class="col-6">
+        <div class="Content-header-team">
                 <h2 class="title"> Our Teams </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, officiis tenetur! Distinctio provident placeat omnis similique ea? Autem quibusdam sunt quidem totam! Error ex recusandae ea quae quia odit laborum?</p>
-            </div>
-            <div class="col-6">
-                <a class="link-team" href="#">
-                    Join Our Team  
-                    <span class="icon-arrow-right2"></span>
-                </a>
-            </div>
         </div>
         <div class="row slider">
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                </div>
-
             </div>
             <div class="col-4">
                 <div class="image-team">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                    <div class="details-person">
-                        <h2> Sara Ahmed </h2>
-                        <span> Engineer</span>
+                    <div class="content-img"></div>
+                    <img src="assists/images/IMG-Defult-Male.jpg" alt="" />
+                    <div class="content-team-details">
+                        <h2>Sara Farouck </h2>
+                        <span> Manger Area </span>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </div>
-                <div class="description-job">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
                 </div>
             </div>
         </div>
@@ -416,7 +400,7 @@
         <div class="row">
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Sheveling </h2>
                     </a>
@@ -424,7 +408,7 @@
             </div>
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Pallet Racking</h2>
                     </a>
@@ -432,7 +416,7 @@
             </div>
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Mezzanine </h2>
                     </a>
@@ -440,7 +424,7 @@
             </div>
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Handling Equipment </h2>
                     </a>
@@ -448,7 +432,7 @@
             </div>
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Lockers and Cabinets </h2>
                     </a>
@@ -456,7 +440,7 @@
             </div>
             <div class="col-4">
                 <div class="image-product">
-                    <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
+                    <img src="assists/images/6.jpg" alt="">
                     <a href="#" class="content-title-project">
                         <h2> Sheveling </h2>
                     </a>
@@ -555,11 +539,9 @@
             <div class="col-4">
                 <div class="image-blog">
                     <div class="content-image">
-                        <a href="#">
-                            <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                        </a>
+                        <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
                         <div class="Catagory">
-                            Bussniss
+                           <a href="#"> Bussniss</a> 
                         </div>
                     </div>
                     <div class="details-blog"> 
@@ -576,11 +558,9 @@
             <div class="col-4">
                 <div class="image-blog">
                     <div class="content-image">
-                        <a href="#">
                             <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                        </a>
                         <div class="Catagory">
-                            Matarials
+                        <a href="#"> Bussniss</a> 
                         </div>
                     </div>
                     <div class="details-blog"> 
@@ -597,11 +577,9 @@
             <div class="col-4">
                 <div class="image-blog">
                     <div class="content-image">
-                        <a href="#">
                             <img src="assists/images/pexels-alexander-isreb-1797428.jpg" alt="">
-                        </a>
                         <div class="Catagory">
-                            Investment
+                            <a href="#"> Bussniss</a> 
                         </div>
                     </div>
                     <div class="details-blog"> 
@@ -620,76 +598,6 @@
 </article>
 <!-- articls -->
 
-<!-- Events -->
-<div class="events margin-between-section">
-    <div class="row center-flex">
-        <h2 class="title"> events </h2>
-    </div>
-    <div class="cover-events">
-        <div class="cover">
-            <img src="assists/images/bg-map2.png" alt="">
-        </div>
-        <div class="container contents-event">
-            <div class="row center-flex">
-                <div class="col-4">
-                    <div class="content-image">
-                        <a href="#">
-                            <img src="assists/images/pic3-4.jpg" alt="">
-                        </a>
-                        <a href="#" class="content-details">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
-                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
-                            </p>
-                        </a>
-                    </div>
-                    <div class="details">
-                        <span> 12/4/2021</span>
-                        <h2> Test Title </h2>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="content-image">
-                        <a href="#">
-                            <img src="assists/images/pic3-4.jpg" alt="">
-                        </a>
-                        <a href="#" class="content-details">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
-                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
-                            </p>
-                        </a>
-                    </div>
-                    <div class="details">
-                        <span> 12/4/2021</span>
-                        <h2> Test Title </h2>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="content-image">
-                        <a href="#">
-                            <img src="assists/images/pic3-4.jpg" alt="">
-                        </a>
-                        <a href="#" class="content-details">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Illum unde beatae, omnis a laborum officia veritatis perspiciatis sunt! 
-                                Delectus iusto repudiandae voluptas libero reiciendis qui quos fugit omnis totam dolores?
-                            </p>
-                        </a>
-                    </div>
-                    <div class="details">
-                        <span> 12/4/2021</span>
-                        <h2> Test Title </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Events -->
 
 
 

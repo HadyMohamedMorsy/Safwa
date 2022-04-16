@@ -29,6 +29,9 @@
     <!-- Start The Header -->
     <?php include ("Layouts/Header.php"); ?>
     <!-- End The Header-->
+    
+    <?php include ("Layouts/Header-Image.php"); ?>
+
 
     <?php include ("Layouts/index-Body.php"); ?>
 
