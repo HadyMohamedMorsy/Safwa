@@ -1853,10 +1853,11 @@ nav {
 }
 
 .wave {
-  min-height: 700px;
+  min-height: 1000px;
   width: 100%;
   position: relative;
   background: linear-gradient(30deg, #8a817b, #092bec);
+  overflow: hidden;
 }
 
 .wave::before {
@@ -1870,6 +1871,66 @@ nav {
   background-repeat: no-repeat;
   z-index: 1;
   background: url("../images/wave.png");
+}
+
+.wave .content-image {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  top: 200px;
+}
+
+@media (max-width: 767px) {
+  .wave .content-image {
+    display: none;
+  }
+}
+
+.wave .content-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.wave .content-big {
+  position: absolute;
+  top: 20%;
+  font-size: 60px;
+  text-transform: uppercase;
+  left: 10%;
+  color: #fff;
+  opacity: 0.2;
+  letter-spacing: 24px;
+  z-index: 2;
+}
+
+.wave .postion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 3;
+}
+
+.wave .postion h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.wave .postion p {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.wave .postion a {
+  color: #fff;
+  background-color: #fe5627;
+  margin-top: 20px;
 }
 
 .new-section .title {

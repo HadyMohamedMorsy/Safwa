@@ -1,7 +1,27 @@
 <!-- wave -->
 
 <div class="wave">
-    
+    <div class="content-big">
+        <h2> About Us </h2>
+    </div>
+    <div class="container postion">
+        <div class="row">
+            <div class="col-6">
+                <h2> Al Safwa </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, 
+                    officiis tenetur! Distinctio provident placeat omnis similique ea? Autem quibusdam sunt quidem totam! 
+                    Error ex recusandae ea quae quia odit laborum?
+                </p>
+                <a href="#" class="submit btn"> 
+                    sent Message 
+                    <span class="icon-arrow-right2"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content-image">
+            <img src="assists/images/self-pic.png" alt="">
+        </div>
 </div>
 
 <!-- wave -->
