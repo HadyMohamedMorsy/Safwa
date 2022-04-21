@@ -331,39 +331,32 @@
 							?>
 						</div>
 					</div>
-					<form>
+					<form method="post" action="action-Insert/Insert-user.php">
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">UserName</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" type="text" placeholder="Johnny Brown">
+								<input class="form-control" type="text" placeholder="Johnny Brown" name="username">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Email</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="bootstrap@example.com" type="email">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Telephone</label>
-							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="1-(111)-111-1111" type="tel">
+								<input class="form-control" value="bootstrap@example.com" type="email" name="email">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Password</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="password" type="password">
+								<input class="form-control" value="password" type="password" name="password">
 							</div>
 						</div>
 						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Select</label>
+							<label class="col-sm-12 col-md-2 col-form-label">Select Type Of User</label>
 							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12">
+								<select class="custom-select col-12" name="employer">
 									<option selected="">Choose...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<option value="Admin">Admin</option>
+									<option value="Employer">Employer</option>
 								</select>
 							</div>
 						</div>
@@ -373,6 +366,9 @@
 								<input type="file" class="custom-file-input">
 								<label class="custom-file-label">Choose file</label>
 							</div>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary" name="submit">Add User </a>
 						</div>
 					</form>
 					<div class="collapse collapse-box" id="basic-form1" >
@@ -388,40 +384,8 @@
 
 <!-- test -->
 
-<?php 	
-	require_once('database/users.php');
-
-	$tests = new users();
-
-	$tests->setUserId(2);
-
-	$fetch = $tests->get_users("id");
-
-	if($fetch){
-
-		while($rows = $fetch->fetch_assoc()){
-                    
-			echo $username = $rows['UserName'];
-		}
-
-	}
-
-
-
-?>
-
-
-
 
 <!-- test -->
-
-
-
-
-
-
-
-
 			</div>
 			<div class="footer-wrap pd-20 mb-20 card-box">
 				Safwa  - Engneering Industry  <a href="https://github.com/dropways" target="_blank">Hady Mohamed</a>
