@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css">
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
-
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -61,50 +58,58 @@
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Form Basic</li>
+									<li class="breadcrumb-item active" aria-current="page">Form</li>
 								</ol>
 							</nav>
 						</div>
+						<div class="col-md-6 col-sm-12 text-right">
+							<div class="dropdown">
+								<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+									January 2018
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Export List</a>
+									<a class="dropdown-item" href="#">Policies</a>
+									<a class="dropdown-item" href="#">View Assets</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- Default Basic Forms Start -->
-				<div class="pd-20 card-box mb-30">
-					<div class="clearfix">
-						<div class="pull-left">
-							<h4 class="text-blue h4">Default Basic Forms</h4>
-							<p class="mb-30">Regester Your User Of Safwa </p>
+
+				<form class="html-editor pd-20 card-box mb-30">
+
+					<h2 class="h4 text-blue">Add Posts </h2>
+					<a href="blogs.php" class="btn btn-primary">Add Post </a>
+
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-12 col-form-label">Title-(EN)</label>
+						<div class="col-sm-12 col-md-12">
+							<input class="form-control" type="text" placeholder="Title Name" name="title">
 						</div>
 					</div>
-					<form method="post" action="action-Insert/Insert-user.php">
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">UserName</label>
-							<div class="col-sm-12 col-md-10">
-								<input class="form-control" type="text" placeholder="Johnny Brown" name="username">
-							</div>
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-12 col-form-label">Title-(AR)</label>
+						<div class="col-sm-12 col-md-12">
+							<input class="form-control" type="text" placeholder="Title Name" name="title">
 						</div>
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Email</label>
-							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="bootstrap@example.com" type="email" name="email">
-							</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-12 col-form-label">Title-(FR)</label>
+						<div class="col-sm-12 col-md-12">
+							<input class="form-control" type="text" placeholder="Title Name" name="title">
 						</div>
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Password</label>
-							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="password" type="password" name="Password">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-12 col-md-2 col-form-label">Select Type Of User</label>
-							<div class="col-sm-12 col-md-10">
-								<select class="custom-select col-12" name="employer">
-									<option selected="">Choose...</option>
-									<option value="Admin">Admin</option>
-									<option value="Employer">Employer</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
+					</div>
+					<h2 class="h4 text-blue mt-5"> English Box  </h2>
+					<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..."></textarea>
+
+					<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
+					<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..."></textarea>
+
+					<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
+					<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..."></textarea>
+
+					<div class="form-group">
 							<label>Custom file input</label>
 							<div class="custom-file">
 								<input type="file" class="custom-file-input">
@@ -112,28 +117,18 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary" name="submit">Add User </a>
+							<button type="submit" class="btn btn-primary" name="submit">Add Post </a>
 						</div>
-					</form>
-					<div class="collapse collapse-box" id="basic-form1" >
-						<div class="code-box">
-							<div class="clearfix">
-								<a href="javascript:;" class="btn btn-primary btn-sm code-copy pull-left"  data-clipboard-target="#copy-pre"><i class="fa fa-clipboard"></i> Copy Code</a>
-								<a href="#basic-form1" class="btn btn-primary btn-sm pull-right" rel="content-y"  data-toggle="collapse" role="button"><i class="fa fa-eye-slash"></i> Hide Code</a>
-							</div>
-					</div>
-				</div>
-		</div>
-				<!-- Default Basic Forms End -->
-		</div>
+				</form>
+			</div>
 			<div class="footer-wrap pd-20 mb-20 card-box">
-				Safwa  - Engneering Industry  <a href="https://github.com/dropways" target="_blank">Hady Mohamed</a>
+				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 			</div>
 		</div>
 	</div>
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
-	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/script.js"></script>
 	<script src="vendors/scripts/process.js"></script>
 	<script src="vendors/scripts/layout-settings.js"></script>
 </body>

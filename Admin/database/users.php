@@ -14,7 +14,6 @@ class users extends connection{
     private $user_status;
     private $user_created_on;
 
-    private $Current_Date = date('Y/m/d');
 
     public function setUserId($user_id)
     {
@@ -114,21 +113,20 @@ class users extends connection{
 
     public function InsertUser(){
 
-        $sql = 'INSERT INTO users
+        $sql = 'INSERT INTO  users SET
             UserName = "'.$this->user_name.'",
-            user_email = "'.$this->user_email.'",
-            Password = "'.$this->Password.'",
+            Password = "'.$this->user_password.'",
+            Email = "'.$this->user_email.'",
             profile = "IMG-Defult-Male.jpg",
             status = "Active",
-            created_on = "'.$this->Current_Date.'",
+            created_on = "'.date('Y/m/d').'",
             Employer = "Admin",
             FirstName = "Hady",
-            SecoundName = "Hady",
-            type = "female"
+            SecoundName = "Ahmed",
+            type = "Female"
         ';
         
-        $result =  $this->runconnection()->query($sql);
-
+        $this->runconnection()->query($sql);
     }
 }
 
