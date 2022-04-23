@@ -77,37 +77,36 @@
 					</div>
 				</div>
 
-				<form class="html-editor pd-20 card-box mb-30">
-
+				<form class="html-editor pd-20 card-box mb-30" method="post" action="./action-Insert/insert-news.php">
 					<h2 class="h4 text-blue">Add Posts </h2>
 					<a href="blogs.php" class="btn btn-primary">Add Post </a>
 
 					<div class="form-group row">
 						<label class="col-sm-12 col-md-12 col-form-label">Title-(EN)</label>
 						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title">
+							<input class="form-control" type="text" placeholder="Title Name" name="title-en">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="col-sm-12 col-md-12 col-form-label">Title-(AR)</label>
 						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title">
+							<input class="form-control" type="text" placeholder="Title Name" name="title-ar">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="col-sm-12 col-md-12 col-form-label">Title-(FR)</label>
 						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title">
+							<input class="form-control" type="text" placeholder="Title Name" name="title-fr">
 						</div>
 					</div>
 					<h2 class="h4 text-blue mt-5"> English Box  </h2>
-					<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..."></textarea>
+					<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="post_en"></textarea>
 
 					<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
-					<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..."></textarea>
+					<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="post_ar"></textarea>
 
 					<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
-					<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..."></textarea>
+					<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="post_fr"></textarea>
 
 					<div class="form-group">
 							<label>Custom file input</label>

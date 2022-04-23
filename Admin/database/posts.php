@@ -5,59 +5,40 @@
 
 
 class Posts extends connection{
-    private $id;
-    private $catagort_id;
-    private $user_id;
-    private $Thumbnail;
-    private $title_en;
-    private $title_fr;
-    private $title_ar;
-    private $Description_EN;
-    private $Description_AR;
-    private $Description_Fr;
-    private $created_on;
-    private $Slug;
+    public $id;
+    public $catagort_id;
+    public $user_id;
+    public $Thumbnail;
+    public $title_en;
+    public $title_fr;
+    public $title_ar;
+    public $Description_EN;
+    public $Description_AR;
+    public $Description_Fr;
+    public $created_on;
+    public $Slug;
 
-
-    public function setUserId($catagort_id)
-    {
-        $this->catagort_id = $catagort_id;
-    }
-
-    public function getcatagort_id()
-    {
-        return $this->catagort_id;
-    }
-
-    public function setuser_id($user_id)
-    {
-        $this->user_id = $user_id;
-    }
-
-    public function getuser_id()
-    {
-        return $this->user_id;
-    }
-
-    public function setuser_id($id)
+    public function setid($id)
     {
         $this->id = $id;
     }
 
-    public function getid()
+    public function setcatagortId($catagort_id)
     {
-        return $this->id;
+        $this->catagort_id = $catagort_id;
     }
+
+    public function setuser_id($user_id)
+    {
+        $this->User_id = $user_id;
+    }
+
 
     public function setThumbnail($Thumbnail)
     {
         $this->Thumbnail = $Thumbnail;
     }
 
-    public  function getThumbnail()
-    {
-        return $this->Thumbnail;
-    }
 
     public function settitle_en($title_en)
     {
@@ -74,22 +55,7 @@ class Posts extends connection{
         $this->title_fr = $title_fr;
     }
 
-    public function gettitle_en()
-    {
-        return $this->title_en;
-    }
-
-    public function gettitle_ar()
-    {
-        return $this->title_ar;
-    }
-
-    public function gettitle_fr()
-    {
-        return $this->title_en;
-    }
     
-
     public function setDescription_EN($Description_EN)
     {
         $this->Description_EN = $Description_EN;
@@ -105,41 +71,22 @@ class Posts extends connection{
         $this->Description_Fr = $Description_Fr;
     }
 
-    public function getDescription_en()
-    {
-        return $this->Description_EN;
-    }
-
-    public function getDescription_ar()
-    {
-        return $this->Description_AR;
-    }
-
-    public function getDescription_fr()
-    {
-        return $this->Description_Fr;
-    }
-
 
     public function setslug($Slug)
     {
         $this->Slug = $Slug;
     }
 
-    public function getslug()
-    {
-        return $this->Slug;
-    }
 
-    public function get_users($post_id = null){
+    public function get_post($post_id = null){
 
         if($post_id != null){
 
-            $sql = 'SELECT * FROM users WHERE User_id = "'.$this->user_id.'"';
+            $sql = 'SELECT * FROM posts WHERE id = "'.$this->id.'"';
 
         }else{
 
-            $sql = 'SELECT * FROM users';
+            $sql = 'SELECT * FROM posts';
 
         }
 
@@ -158,19 +105,20 @@ class Posts extends connection{
 
     }
 
-    public function InsertUser(){
+    public function Insertposts(){
 
-        $sql = 'INSERT INTO  users SET
-            UserName = "'.$this->user_name.'",
-            Password = "'.$this->user_password.'",
-            Email = "'.$this->user_email.'",
-            profile = "IMG-Defult-Male.jpg",
-            status = "Active",
-            created_on = "'.date('Y/m/d').'",
-            Employer = "Admin",
-            FirstName = "Hady",
-            SecoundName = "Ahmed",
-            type = "Female"
+        $sql = 'INSERT INTO  posts SET
+            Catagory_id = "'.$this->catagort_id.'",
+            User_id = "'.$this->User_id.'",
+            Thumbnail = ".IMG-Defult-Male.jpg",
+            title_en = "'.$this->title_en.'",
+            title_ar = "'.$this->title_ar.'",
+            title_fr = "'.$this->title_fr.'",
+            Description_EN = "'.$this->Description_EN.'",
+            Description_AR = "'.$this->Description_AR.'",
+            Description_Fr = "'.$this->Description_Fr.'",
+            Created_on = "'.date('Y/m/d').'",
+            Slug = "slug"
         ';
         
         $this->runconnection()->query($sql);
