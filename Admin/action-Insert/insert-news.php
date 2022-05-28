@@ -1,9 +1,9 @@
 <?php
         if(isset($_POST['submit'])){
 
-                require_once('../database/news.php');
+                require_once('../database/posts.php');
 
-                $posts = new news();
+                $posts = new Posts();
 
                 $posts->setcatagortId(1);
 
@@ -21,7 +21,7 @@
 
                 $posts->setDescription_fr($_POST['post_fr']);
 
-                $posts->Insertnews();
+                $posts->Insertposts('news');
 
         }else{
                 header('location:../blogs.php');

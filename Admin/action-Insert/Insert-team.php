@@ -22,6 +22,8 @@
 
         $team->insertteam();
 
+        header('location:../Team.php');
+
 
     }
 

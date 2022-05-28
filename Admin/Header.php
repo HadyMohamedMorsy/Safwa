@@ -227,6 +227,12 @@
 							<li><a href="blogs.php">Blogs</a></li>
 							<li><a href="news.php">News</a></li>
 							<li><a href="Events.php">Events</a></li>
+							<li><a href="Team.php">Team</a></li>
+							<li><a href="clients.php">clients</a></li>
+							<li><a href="Work.php">Work</a></li>
+							<li><a href="cat_posts.php">Catagory-posts</a></li>
+							<li><a href="cat_events.php">Catagory-events</a></li>
+							<li><a href="cat_news.php">Catagory-news</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

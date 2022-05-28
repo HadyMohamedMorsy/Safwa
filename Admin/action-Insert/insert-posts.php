@@ -21,7 +21,7 @@
 
                 $posts->setDescription_fr($_POST['post_fr']);
 
-                $posts->Insertposts();
+                $posts->Insertposts('posts');
 
         }else{
                 header('location:../blogs.php');

@@ -46,86 +46,220 @@
 
 	<?php include('Header.php'); ?>
 
-	<div class="main-container">
-		<div class="pd-ltr-20 xs-pd-20-10">
-			<div class="min-height-200px">
-				<div class="page-header">
-					<div class="row">
-						<div class="col-md-6 col-sm-12">
-							<div class="title">
-								<h4>Form</h4>
-							</div>
-							<nav aria-label="breadcrumb" role="navigation">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Form</li>
-								</ol>
-							</nav>
-						</div>
-						<div class="col-md-6 col-sm-12 text-right">
-							<div class="dropdown">
-								<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-									January 2018
-								</a>
-								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="#">Export List</a>
-									<a class="dropdown-item" href="#">Policies</a>
-									<a class="dropdown-item" href="#">View Assets</a>
+	<?php
+    	$do = isset($_GET['do']) ? $_GET['do'] : "Manage";
+
+		if($do == "Manage"){?>
+		
+			<div class="main-container">
+				<div class="pd-ltr-20 xs-pd-20-10">
+					<div class="min-height-200px">
+						<div class="page-header">
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+									<div class="title">
+										<h4>Form</h4>
+									</div>
+									<nav aria-label="breadcrumb" role="navigation">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+											<li class="breadcrumb-item active" aria-current="page">Form</li>
+										</ol>
+									</nav>
+								</div>
+								<div class="col-md-6 col-sm-12 text-right">
+									<div class="dropdown">
+										<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+											January 2018
+										</a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a class="dropdown-item" href="#">Export List</a>
+											<a class="dropdown-item" href="#">Policies</a>
+											<a class="dropdown-item" href="#">View Assets</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<form class="html-editor pd-20 card-box mb-30" method="post" action="./action-Insert/insert-posts.php">
+							<h2 class="h4 text-blue">Add Posts </h2>
+							<a href="blogs.php" class="btn btn-primary">Add Post </a>
+
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-12 col-form-label">Title-(EN)</label>
+								<div class="col-sm-12 col-md-12">
+									<input class="form-control" type="text" placeholder="Title Name" name="title-en">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-12 col-form-label">Title-(AR)</label>
+								<div class="col-sm-12 col-md-12">
+									<input class="form-control" type="text" placeholder="Title Name" name="title-ar">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-12 col-form-label">Title-(FR)</label>
+								<div class="col-sm-12 col-md-12">
+									<input class="form-control" type="text" placeholder="Title Name" name="title-fr">
+								</div>
+							</div>
+							<h2 class="h4 text-blue mt-5"> English Box  </h2>
+							<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="post_en"></textarea>
+
+							<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
+							<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="post_ar"></textarea>
+
+							<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
+							<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="post_fr"></textarea>
+
+							<div class="form-group">
+									<label>Custom file input</label>
+									<div class="custom-file">
+										<input type="file" class="custom-file-input">
+										<label class="custom-file-label">Choose file</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary" name="submit">Add Post </a>
+								</div>
+						</form>
+						
+					</div>
+					<div class="footer-wrap pd-20 mb-20 card-box">
+						DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 					</div>
 				</div>
+			</div>
 
-				<form class="html-editor pd-20 card-box mb-30" method="post" action="./action-Insert/insert-posts.php">
-					<h2 class="h4 text-blue">Add Posts </h2>
-					<a href="blogs.php" class="btn btn-primary">Add Post </a>
+		<?php
+		}elseif($do == "Edit"){?>
+			<?php
+				// edit this is form 
+				if(isset($_GET['id'])){
 
-					<div class="form-group row">
-						<label class="col-sm-12 col-md-12 col-form-label">Title-(EN)</label>
-						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title-en">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="col-sm-12 col-md-12 col-form-label">Title-(AR)</label>
-						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title-ar">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="col-sm-12 col-md-12 col-form-label">Title-(FR)</label>
-						<div class="col-sm-12 col-md-12">
-							<input class="form-control" type="text" placeholder="Title Name" name="title-fr">
-						</div>
-					</div>
-					<h2 class="h4 text-blue mt-5"> English Box  </h2>
-					<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="post_en"></textarea>
+					$id = filter_var($_GET['id'],FILTER_VALIDATE_INT);
 
-					<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
-					<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="post_ar"></textarea>
+					require_once('database/posts.php');
 
-					<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
-					<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="post_fr"></textarea>
+					$get_data = new Posts();
 
-					<div class="form-group">
-							<label>Custom file input</label>
-							<div class="custom-file">
-								<input type="file" class="custom-file-input">
-								<label class="custom-file-label">Choose file</label>
+					$get_data->setid($id);
+
+					$getworks = $get_data-> get_post('id' , 'posts');
+
+					if($getworks){
+						while($rows = $getworks->fetch_assoc()){
+							$id = $rows['id'];
+							$Catagory_id = $rows['Catagory_id'];
+							$User_id = $rows['User_id'];
+							$Thumbnail = $rows['Thumbnail'];
+							$title_en = $rows['title_en'];
+							$title_ar = $rows['title_ar'];
+							$title_fr = $rows['title_fr'];
+							$Description_EN = $rows['Description_EN'];
+							$Description_AR = $rows['Description_AR'];
+							$Description_Fr = $rows['Description_Fr'];
+							$Created_on = $rows['Created_on'];
+							$Slug = $rows['Slug'];
+							?>
+							<!-- form Edit  -->
+
+							<div class="main-container">
+								<div class="pd-ltr-20 xs-pd-20-10">
+									<div class="min-height-200px">
+										<div class="page-header">
+											<div class="row">
+												<div class="col-md-6 col-sm-12">
+													<div class="title">
+														<h4>Form</h4>
+													</div>
+													<nav aria-label="breadcrumb" role="navigation">
+														<ol class="breadcrumb">
+															<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+															<li class="breadcrumb-item active" aria-current="page">Form</li>
+														</ol>
+													</nav>
+												</div>
+												<div class="col-md-6 col-sm-12 text-right">
+													<div class="dropdown">
+														<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+															January 2018
+														</a>
+														<div class="dropdown-menu dropdown-menu-right">
+															<a class="dropdown-item" href="#">Export List</a>
+															<a class="dropdown-item" href="#">Policies</a>
+															<a class="dropdown-item" href="#">View Assets</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<form class="html-editor pd-20 card-box mb-30" method="post" action="./action_Edit/Edit_Posts.php">
+											<h2 class="h4 text-blue">Add Posts </h2>
+											<a href="blogs.php" class="btn btn-primary">Add Post </a>
+
+											<div class="form-group row">
+												<label class="col-sm-12 col-md-12 col-form-label">Title-(EN)</label>
+												<div class="col-sm-12 col-md-12">
+													<input class="form-control" type="text" placeholder="Title Name" name="title-en" value="<?php echo $title_en ?>">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-12 col-md-12 col-form-label">Title-(AR)</label>
+												<div class="col-sm-12 col-md-12">
+													<input class="form-control" type="text" placeholder="Title Name" name="title-ar" value="<?php echo $title_ar ?>">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-12 col-md-12 col-form-label">Title-(FR)</label>
+												<div class="col-sm-12 col-md-12">
+													<input class="form-control" type="text" placeholder="Title Name" name="title-fr" value="<?php echo $title_fr ?>">
+												</div>
+											</div>
+											<h2 class="h4 text-blue mt-5"> English Box  </h2>
+											<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="post_en" value="<?php echo $Description_EN ?>"> <?php echo $Description_EN ?></textarea>
+
+											<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
+											<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="post_ar" value="<?php echo $Description_AR ?>" > <?php echo $Description_AR ?> </textarea>
+
+											<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
+											<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="post_fr" value="<?php echo $Description_Fr ?>">  <?php echo $Description_Fr ?></textarea>
+
+											<div class="form-group">
+													<label>Custom file input</label>
+													<div class="custom-file">
+														<input type="file" class="custom-file-input">
+														<label class="custom-file-label">Choose file</label>
+													</div>
+												</div>
+												<div class="form-group">
+													<input type="hidden" value="<?php echo $id; ?>" name="id">
+													<button type="submit" class="btn btn-primary" name="submit">Edit Post </a>
+												</div>
+										</form>
+										
+									</div>
+									<div class="footer-wrap pd-20 mb-20 card-box">
+										DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-primary" name="submit">Add Post </a>
-						</div>
-				</form>
-				
-			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-			</div>
-		</div>
-	</div>
+
+							<!-- form Edit -->
+							<?php
+						}
+
+					}else{?>
+							<div class="alert alert-warning">
+							<strong>Warning!</strong> Indicates a warning that might need attention.
+							</div>
+					<?php
+					}
+				}
+		}
+	?>
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.js"></script>

@@ -111,6 +111,32 @@ class users extends connection{
 
     }
 
+    public function Edit_user(){
+
+        $sql = 'UPDATE users SET
+            UserName = "'.$this->user_name.'",
+            Password = "'.$this->user_password.'",
+            Email = "'.$this->user_email.'",
+            profile = "IMG-Defult-Male.jpg",
+            status = "Active",
+            created_on = "'.date('Y/m/d').'",
+            Employer = "Admin",
+            FirstName = "Hady",
+            SecoundName = "Ahmed",
+            type = "Female"
+            WHERE User_id = "'.$this->user_id.'"
+        ';
+
+        $this->runconnection()->query($sql);
+    }
+
+    public function Delete_user(){
+
+        $sql = 'DELETE FROM  users  WHERE User_id = "'.$this->user_id.'" ';
+
+        $this->runconnection()->query($sql);
+    }
+
     public function InsertUser(){
 
         $sql = 'INSERT INTO  users SET
@@ -124,10 +150,13 @@ class users extends connection{
             FirstName = "Hady",
             SecoundName = "Ahmed",
             type = "Female"
+            
         ';
         
         $this->runconnection()->query($sql);
     }
+
+
 }
 
 

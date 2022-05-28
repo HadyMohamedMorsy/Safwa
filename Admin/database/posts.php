@@ -78,15 +78,15 @@ class Posts extends connection{
     }
 
 
-    public function get_post($post_id = null){
+    public function get_post($post_id = null , $table){
 
         if($post_id != null){
 
-            $sql = 'SELECT * FROM posts WHERE id = "'.$this->id.'"';
+            $sql = 'SELECT * FROM '.$table.' WHERE id = "'.$this->id.'"';
 
         }else{
 
-            $sql = 'SELECT * FROM posts';
+            $sql = 'SELECT * FROM '.$table.' ';
 
         }
 
@@ -105,9 +105,29 @@ class Posts extends connection{
 
     }
 
-    public function Insertposts(){
+    public function Edit_post($table){
 
-        $sql = 'INSERT INTO  posts SET
+        $sql = 'UPDATE '.$table.' SET
+            Catagory_id = "'.$this->catagort_id.'",
+            User_id = "'.$this->User_id.'",
+            Thumbnail = ".IMG-Defult-Male.jpg",
+            title_en = "'.$this->title_en.'",
+            title_ar = "'.$this->title_ar.'",
+            title_fr = "'.$this->title_fr.'",
+            Description_EN = "'.$this->Description_EN.'",
+            Description_AR = "'.$this->Description_AR.'",
+            Description_Fr = "'.$this->Description_Fr.'",
+            Created_on = "'.date('Y/m/d').'",
+            Slug = "slug"
+            WHERE id = "'.$this->id.'"
+        ';
+
+        $this->runconnection()->query($sql);
+    }
+
+    public function Insertposts($table){
+
+        $sql = 'INSERT INTO  '.$table.' SET
             Catagory_id = "'.$this->catagort_id.'",
             User_id = "'.$this->User_id.'",
             Thumbnail = ".IMG-Defult-Male.jpg",
@@ -121,6 +141,13 @@ class Posts extends connection{
             Slug = "slug"
         ';
         
+        $this->runconnection()->query($sql);
+    }
+
+    public function Deleteposts($table){
+
+        $sql = 'DELETE * FROM '.$table.' WHERE id = "'.$this->id.'"';
+
         $this->runconnection()->query($sql);
     }
 }

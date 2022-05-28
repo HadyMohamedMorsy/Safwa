@@ -1,9 +1,9 @@
 <?php
         if(isset($_POST['submit'])){
 
-                require_once('../database/events.php');
+                require_once('../database/posts.php');
 
-                $posts = new Events();
+                $posts = new Posts();
 
                 $posts->setcatagortId(1);
 
@@ -21,7 +21,7 @@
 
                 $posts->setDescription_fr($_POST['post_fr']);
 
-                $posts->Insertevents();
+                $posts->Insertposts('events');
 
         }else{
                 header('location:../blogs.php');
