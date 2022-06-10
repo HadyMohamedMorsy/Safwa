@@ -7,6 +7,12 @@
     include IncludeFileByLanguage('Style',$_SESSION['Language']);
     include IncludeFileByLanguage('Footer',$_SESSION['Language']);
     include IncludeFileByLanguage('index',$_SESSION['Language']);
+
+
+    // Check if the user is logged in, if not then redirect him to login page
+    if (!isset($_SESSION['U_ID'])) {
+		header('location: login.php');
+	}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo strtolower($_SESSION['Language']); ?>" dir="<?php echo $Direction; ?>">
