@@ -31,7 +31,7 @@
 	</script>
 </head>
 <body>
-	<!-- <div class="pre-loader">
+	<div class="pre-loader">
 		<div class="pre-loader-box">
 			<div class="loader-logo"><img src="vendors/images/deskapp-logo.svg" alt=""></div>
 			<div class='loader-progress' id="progress_div">
@@ -42,16 +42,11 @@
 				Loading...
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<?php include('Header.php'); ?>
 
-	
-	<?php
-    	$do = isset($_GET['do']) ? $_GET['do'] : "Manage";
-
-		if($do == "Manage"){?>
-			<div class="main-container">
+	<div class="main-container">
 					<div class="pd-ltr-20 xs-pd-20-10">
 						<div class="min-height-200px">
 							<div class="page-header">
@@ -120,116 +115,7 @@
 							DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 						</div>
 					</div>
-			</div>
-		<?php
-		}elseif($do == "Edit"){?>
-			<?php
-				// edit this is form 
-				if(isset($_GET['id'])){
-
-					$id = filter_var($_GET['id'],FILTER_VALIDATE_INT);
-
-					require_once('database/work.php');
-
-					$get_data = new Work();
-
-					$get_data->setWork_id($id);
-
-					$getworks = $get_data-> getwork('id');
-
-					if($getworks){
-						while($rows = $getworks->fetch_assoc()){
-							$Title_work_en = $rows['Title_work_en'];
-							$Title_work_ar = $rows['Title_work_ar'];
-							$Title_work_fr = $rows['Title_work_fr'];
-							$Catagory_id = $rows['Catagory_id'];
-							$Image_work = $rows['Image_work'];
-							?>
-							<!-- form Edit  -->
-							<div class="main-container">
-								<div class="pd-ltr-20 xs-pd-20-10">
-									<div class="min-height-200px">
-										<div class="page-header">
-											<div class="row">
-												<div class="col-md-6 col-sm-12">
-													<div class="title">
-														<h4>Form</h4>
-													</div>
-													<nav aria-label="breadcrumb" role="navigation">
-														<ol class="breadcrumb">
-															<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-															<li class="breadcrumb-item active" aria-current="page">Form</li>
-														</ol>
-													</nav>
-												</div>
-												<div class="col-md-6 col-sm-12 text-right">
-													<div class="dropdown">
-														<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-															January 2018
-														</a>
-														<div class="dropdown-menu dropdown-menu-right">
-															<a class="dropdown-item" href="#">Export List</a>
-															<a class="dropdown-item" href="#">Policies</a>
-															<a class="dropdown-item" href="#">View Assets</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<form class="html-editor pd-20 card-box mb-30" method="post" action="action_Edit/Edit_works.php">
-											<h2 class="h4 text-blue">Add Work </h2>
-											<a href="Team.php" class="btn btn-primary">Add New Work </a>
-
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Title_work(en)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title Name" name="Title_work_en" value="<?php echo $Title_work_en; ?> ">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Title_work(ar)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title Name" name="Title_work_ar" value="<?php echo $Title_work_ar; ?>">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Title_work(fr)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title Name" name="Title_work_fr" value="<?php echo $Title_work_fr; ?>>
-												</div>
-											</div>
-
-											<div class="form-group">
-													<label>Custom file input</label>
-													<div class="custom-file">
-														<input type="file" class="custom-file-input">
-														<label class="custom-file-label">Choose file</label>
-													</div>
-												</div>
-												<div class="form-group">
-													<input type="hidden" value="<?php echo $rows['Work_id'];  ?>" name="id">
-													<button type="submit" class="btn btn-primary" name="submit">Edit Work </a>
-												</div>
-										</form>
-									</div>
-									<div class="footer-wrap pd-20 mb-20 card-box">
-										DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-									</div>
-								</div>
-							</div>
-							<!-- form Edit -->
-							<?php
-						}
-
-					}else{?>
-							<div class="alert alert-warning">
-							<strong>Warning!</strong> Indicates a warning that might need attention.
-							</div>
-					<?php
-					}
-				}
-		}
-	?>
+	</div>
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.js"></script>

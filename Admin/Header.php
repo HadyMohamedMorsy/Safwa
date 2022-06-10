@@ -223,16 +223,15 @@
 							<span class="micon dw dw-edit2"></span><span class="mtext">Forms</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="form-basic.php">Form Basic</a></li>
-							<li><a href="blogs.php">Blogs</a></li>
-							<li><a href="news.php">News</a></li>
-							<li><a href="Events.php">Events</a></li>
-							<li><a href="Team.php">Team</a></li>
-							<li><a href="clients.php">clients</a></li>
-							<li><a href="Work.php">Work</a></li>
-							<li><a href="cat_posts.php">Catagory-posts</a></li>
-							<li><a href="cat_events.php">Catagory-events</a></li>
-							<li><a href="cat_news.php">Catagory-news</a></li>
+							<li><a href="./profile.php">Update Profile</a></li>
+							<li><a href="./Team.php">Team</a></li>
+							<li><a href="./testemonials.php">testemonials</a></li>
+							<li><a href="./Work.php">Works</a></li>
+							<li><a href="./blogs.php">Blogs</a></li>
+							<li><a href="./Table.php">Table</a></li>
+							<li><a href="./clients.php">Client</a></li>
+							<li><a href="./Events.php">Events</a></li>
+							<li><a href="./cat_posts.php">cat_posts</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

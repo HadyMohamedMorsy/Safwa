@@ -6,6 +6,7 @@ $Message = array(); // for errors message
 
 if (isset($_POST['submit'])) {
     if($_SERVER["REQUEST_METHOD"] == "POST"){
+
         if (!isset($_POST["Username"])) {
             $Message[] = 'write the user name';
         }

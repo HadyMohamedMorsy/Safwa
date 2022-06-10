@@ -46,12 +46,7 @@
 
 	<?php include('Header.php'); ?>
 
-	<?php
-    	$do = isset($_GET['do']) ? $_GET['do'] : "Manage";
-
-		if($do == "Manage"){?>
-
-			<div class="main-container">
+	<div class="main-container">
 				<div class="pd-ltr-20 xs-pd-20-10">
 					<div class="min-height-200px">
 						<div class="page-header">
@@ -103,102 +98,7 @@
 						DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 					</div>
 				</div>
-			</div>
-
-		<?php
-		}elseif($do == "Edit"){?>
-			<?php
-				// edit this is form 
-				if(isset($_GET['id'])){
-
-					$id = filter_var($_GET['id'],FILTER_VALIDATE_INT);
-
-					require_once('database/testemonials.php');
-
-					$test = new Testemonials();
-
-					$test->setTestemonial_id($id);
-
-					$gettest = $test-> getTestemonials('id');
-
-					if($gettest){
-						while($rows = $gettest->fetch_assoc()){
-							$Testemonial_id = $rows['Testemonial_id'];
-							$Catagory_id = $rows['Catagory_id'];
-							$Description_en = $rows['Description_en'];
-							$Description_ar = $rows['Description_ar'];
-							$Description_fr = $rows['Description_fr'];
-							?>
-							<!-- form Edit  -->
-
-							<div class="main-container">
-								<div class="pd-ltr-20 xs-pd-20-10">
-									<div class="min-height-200px">
-										<div class="page-header">
-											<div class="row">
-												<div class="col-md-6 col-sm-12">
-													<div class="title">
-														<h4>Form</h4>
-													</div>
-													<nav aria-label="breadcrumb" role="navigation">
-														<ol class="breadcrumb">
-															<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-															<li class="breadcrumb-item active" aria-current="page">Form</li>
-														</ol>
-													</nav>
-												</div>
-												<div class="col-md-6 col-sm-12 text-right">
-													<div class="dropdown">
-														<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-															January 2018
-														</a>
-														<div class="dropdown-menu dropdown-menu-right">
-															<a class="dropdown-item" href="#">Export List</a>
-															<a class="dropdown-item" href="#">Policies</a>
-															<a class="dropdown-item" href="#">View Assets</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<form class="html-editor pd-20 card-box mb-30" method="post" action="action_Edit/Edit_testemonials.php">
-											<h2 class="h4 text-blue">Add Team </h2>
-											<a href="testemonials.php" class="btn btn-primary">Add New Testemonial </a>
-
-											<h2 class="h4 text-blue mt-5"> English Box  </h2>
-											<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="Description-en" value="<?php echo $Description_en; ?>"> <?php echo $Description_en; ?> </textarea>
-
-											<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
-											<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="Description-ar" value="<?php echo $Description_ar; ?>"> <?php echo $Description_ar; ?> </textarea>
-
-											<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
-											<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="Description-fr" value="<?php echo $Description_fr; ?>"> <?php echo $Description_fr; ?> </textarea>
-
-												<div class="form-group">
-													<input type="hidden" value="<?php echo $Testemonial_id; ?>" name="id">
-													<button type="submit" class="btn btn-primary" name="submit">Add Testemonials </a>
-												</div>
-										</form>
-									</div>
-									<div class="footer-wrap pd-20 mb-20 card-box">
-										DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- form Edit -->
-							<?php
-						}
-
-					}else{?>
-							<div class="alert alert-warning">
-							<strong>Warning!</strong> Indicates a warning that might need attention.
-							</div>
-					<?php
-					}
-				}
-		}
-	?>
+	</div>
 
 
 	<!-- js -->

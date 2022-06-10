@@ -46,12 +46,7 @@
 
 	<?php include('Header.php'); ?>
 
-	<?php
-    	$do = isset($_GET['do']) ? $_GET['do'] : "Manage";
-
-		if($do == "Manage"){?>
-
-		<div class="main-container">
+	<div class="main-container">
 				<div class="pd-ltr-20 xs-pd-20-10">
 					<div class="min-height-200px">
 						<div class="page-header">
@@ -112,111 +107,7 @@
 						DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
 					</div>
 				</div>
-		</div>
-
-		<?php
-		}elseif($do == "Edit"){?>
-			<?php
-				// edit this is form 
-				if(isset($_GET['id'])){
-
-					$id = filter_var($_GET['id'],FILTER_VALIDATE_INT);
-
-					require_once('database/cat_post.php');
-
-					$test = new catPosts();
-
-					$test->setpostid($id);
-
-					$gettest = $test->get_cat('id' , 'posts_catagory');
-
-					if($gettest){
-						while($rows = $gettest->fetch_assoc()){
-							$id = $rows['post_catagory_id'];
-							$title_cat_en = $rows['title_cat_en'];
-							$title_cat_ar = $rows['title_cat_ar'];
-							$title_cat_fr = $rows['title_cat_fr'];
-							$slug = $rows['slug'];
-							?>
-							<!-- form Edit  -->
-
-							<div class="main-container">
-								<div class="pd-ltr-20 xs-pd-20-10">
-									<div class="min-height-200px">
-										<div class="page-header">
-											<div class="row">
-												<div class="col-md-6 col-sm-12">
-													<div class="title">
-														<h4>Form</h4>
-													</div>
-													<nav aria-label="breadcrumb" role="navigation">
-														<ol class="breadcrumb">
-															<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-															<li class="breadcrumb-item active" aria-current="page">Form</li>
-														</ol>
-													</nav>
-												</div>
-												<div class="col-md-6 col-sm-12 text-right">
-													<div class="dropdown">
-														<a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-															January 2018
-														</a>
-														<div class="dropdown-menu dropdown-menu-right">
-															<a class="dropdown-item" href="#">Export List</a>
-															<a class="dropdown-item" href="#">Policies</a>
-															<a class="dropdown-item" href="#">View Assets</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<form class="html-editor pd-20 card-box mb-30" method="post" action="action_Edit/Edit_cat_posts.php">
-											<h2 class="h4 text-blue">Edit Cat-new </h2>
-											<a href="cat_news.php" class="btn btn-primary">Add Catagory Post  </a>
-
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Catagory-Post(en)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title_en" name="cat_post_en" value="<?php echo $title_cat_en; ?>">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Catagory-Post(ar)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title_ar" name="cat_post_ar" value="<?php echo $title_cat_ar; ?>">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-md-12 col-form-label">Catagory-Post(fr)</label>
-												<div class="col-sm-12 col-md-12">
-													<input class="form-control" type="text" placeholder="Title_fr" name="cat_post_fr" value="<?php echo $title_cat_fr; ?>">
-												</div>
-											</div>
-											<div class="form-group">
-												<input type="hidden" value="<?php echo $id; ?>" name="id">
-												<button type="submit" class="btn btn-primary" name="submit">Edit Cat Post </a>
-											</div>
-										</form>
-									</div>
-									<div class="footer-wrap pd-20 mb-20 card-box">
-										DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- form Edit -->
-							<?php
-						}
-
-					}else{?>
-							<div class="alert alert-warning">
-							<strong>Warning!</strong> Indicates a warning that might need attention.
-							</div>
-					<?php
-					}
-				}
-		}
-	?>
+	</div>
 	<!-- js -->
 	<script src="vendors/scripts/core.js"></script>
 	<script src="vendors/scripts/script.js"></script>
