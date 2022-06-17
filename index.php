@@ -1,18 +1,18 @@
 <?php
-    include 'Controller/Function/C-F-Timezone.php';
-    include 'Controller/Function/C-F-Date-And-Time.php';
-    include 'Controller/Config.php';
-    include 'Controller/Function/C-F-Language.php';
-    include IncludeFileByLanguage('Header',$_SESSION['Language']);
-    include IncludeFileByLanguage('Style',$_SESSION['Language']);
-    include IncludeFileByLanguage('Footer',$_SESSION['Language']);
-    include IncludeFileByLanguage('index',$_SESSION['Language']);
+    // include 'Controller/Function/C-F-Timezone.php';
+    // include 'Controller/Function/C-F-Date-And-Time.php';
+    // include 'Controller/Config.php';
+    // include 'Controller/Function/C-F-Language.php';
+    // include IncludeFileByLanguage('Header',$_SESSION['Language']);
+    // include IncludeFileByLanguage('Style',$_SESSION['Language']);
+    // include IncludeFileByLanguage('Footer',$_SESSION['Language']);
+    // include IncludeFileByLanguage('index',$_SESSION['Language']);
 
 
-    // Check if the user is logged in, if not then redirect him to login page
-    if (!isset($_SESSION['U_ID'])) {
-		header('location: login.php');
-	}
+    // // Check if the user is logged in, if not then redirect him to login page
+    // if (!isset($_SESSION['U_ID'])) {
+	// 	header('location: login.php');
+	// }
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo strtolower($_SESSION['Language']); ?>" dir="<?php echo $Direction; ?>">

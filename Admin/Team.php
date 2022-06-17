@@ -1,3 +1,12 @@
+<?php
+	include('../Controller/Login.php');
+	include('../Controller/Team.php');
+
+
+	if (!isset($_SESSION['U_ID'])) {
+		header('location: ./');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,17 +85,15 @@
 									</div>
 								</div>
 							</div>
-							<form class="html-editor pd-20 card-box mb-30" method="post" action="action-Insert/Insert-team.php">
+							<!-- action-Insert/Insert-team.php -->
+							<form class="html-editor pd-20 card-box mb-30" method="post" action="">
 								<h2 class="h4 text-blue">Add Team </h2>
-								<a href="Team.php" class="btn btn-primary">Add New Team </a>
-
 								<div class="form-group row">
 									<label class="col-sm-12 col-md-12 col-form-label">Title</label>
 									<div class="col-sm-12 col-md-12">
 										<input class="form-control" type="text" placeholder="Title Name" name="name">
 									</div>
 								</div>
-
 								<div class="form-group row">
 									<label class="col-sm-12 col-md-12 col-form-label">Job_title-(en)</label>
 									<div class="col-sm-12 col-md-12">
@@ -96,29 +103,29 @@
 								<div class="form-group row">
 									<label class="col-sm-12 col-md-12 col-form-label">Job_title-(ar)</label>
 									<div class="col-sm-12 col-md-12">
-										<input class="form-control" type="text" placeholder="Title Name" name="Job_title-ar">
+										<input class="form-control" type="text" placeholder="Title Name" name="Job_title_ar">
 									</div>
 								</div>
 								<div class="form-group row">
 									<label class="col-sm-12 col-md-12 col-form-label">Job_title-(fr)</label>
 									<div class="col-sm-12 col-md-12">
-										<input class="form-control" type="text" placeholder="Title Name" name="Job_title-fr">
+										<input class="form-control" type="text" placeholder="Title Name" name="Job_title_fr">
 									</div>
 								</div>
 
 								<h2 class="h4 text-blue mt-5"> English Box  </h2>
-								<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="Description-en"></textarea>
+								<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="Description_en"></textarea>
 
 								<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
-								<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="Description-ar"></textarea>
+								<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="Description_ar"></textarea>
 
 								<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
-								<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="Description-fr"></textarea>
+								<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="Description_fr"></textarea>
 
 								<div class="form-group">
 										<label>Custom file input</label>
 										<div class="custom-file">
-											<input type="file" class="custom-file-input">
+											<input type="file" class="custom-file-input" name="file">
 											<label class="custom-file-label">Choose file</label>
 										</div>
 									</div>

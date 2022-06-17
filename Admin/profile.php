@@ -1,4 +1,11 @@
+<?php
+	include('../Controller/Login.php');
 
+
+	if (!isset($_SESSION['U_ID'])) {
+		header('location: ./');
+	}
+?>
 
 <!DOCTYPE html>
 <html>

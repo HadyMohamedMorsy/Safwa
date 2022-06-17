@@ -247,7 +247,11 @@
 							<span class="micon dw dw-right-arrow1"></span><span class="mtext">Additional Pages</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="login.php">Login</a></li>
+							<?php
+								if (isset($_SESSION['U_ID'])) {
+									echo '<li><a href="Logout.php">logout</a></li>';
+								}
+							?>
 						</ul>
 					</li>
 				</ul>

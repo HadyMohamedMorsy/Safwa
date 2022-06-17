@@ -3,7 +3,7 @@
 
     // Check if the user is logged in, if not then redirect him to login page
     if (!isset($_SESSION['U_ID'])) {
-		header('location: ../login.php');
+		header('location: login.php');
 	}
 ?>
 <!DOCTYPE html>

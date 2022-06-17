@@ -1,3 +1,14 @@
+<?php
+	include('../Controller/Login.php');
+	include('../Controller/Testemonials.php');
+
+	// include('Config.php');
+
+
+	if (!isset($_SESSION['U_ID'])) {
+		header('location: ./');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,21 +87,15 @@
 								</div>
 							</div>
 						</div>
-						<form class="html-editor pd-20 card-box mb-30" method="post" action="action-Insert/Insert-Testemonials.php">
-							<h2 class="h4 text-blue">Add Team </h2>
-							<a href="testemonials.php" class="btn btn-primary">Add New Testemonial </a>
-
+						<form class="html-editor pd-20 card-box mb-30" method="POST" action="">
 							<h2 class="h4 text-blue mt-5"> English Box  </h2>
-							<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="Description-en"></textarea>
-
+							<textarea class="textarea_editor form-control border-radius-0" placeholder="Enter text ..." name="Description_en"></textarea>
 							<h2 class="h4 text-blue mt-5"> Arabic Box  </h2>
-							<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="Description-ar"></textarea>
-
+							<textarea class="textarea_editor-secound form-control border-radius-0" placeholder="Enter text ..." name="Description_ar"></textarea>
 							<h2 class="h4 text-blue mt-5"> Frensh  Box  </h2>
-							<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="Description-fr"></textarea>
-
-								<div class="form-group">
-									<button type="submit" class="btn btn-primary" name="submit">Add Testemonials </a>
+							<textarea class="textarea_editor-Thired form-control border-radius-0" placeholder="Enter text ..." name="Description_fr"></textarea>
+								<div class="form-group mt-3">
+									<button type="submit" class="btn btn-primary" name="submit">Add Testemonials </button>
 								</div>
 						</form>
 					</div>
